@@ -8,7 +8,6 @@ const VSLVideoPlayer = () => {
   const overlayAdded = useRef(false);
 
   useEffect(() => {
-    // Initialize video.js player
     const initPlayer = () => {
       if (!videoRef.current || playerRef.current) return;
 
@@ -20,7 +19,6 @@ const VSLVideoPlayer = () => {
         autoplay: false,
       });
 
-      // Save playback position
       playerRef.current.on('timeupdate', () => {
         const currentTime = playerRef.current.currentTime();
         if (currentTime > 0) {
@@ -28,7 +26,6 @@ const VSLVideoPlayer = () => {
         }
       });
 
-      // Check for saved time and show overlay if needed
       playerRef.current.ready(() => {
         setTimeout(() => {
           checkForSavedTime();
@@ -48,7 +45,6 @@ const VSLVideoPlayer = () => {
       }
     };
 
-    // Initialize player with a small delay
     const timer = setTimeout(initPlayer, 100);
 
     return () => {
@@ -63,7 +59,6 @@ const VSLVideoPlayer = () => {
   const showResumeOverlay = (savedTime) => {
     if (!playerRef.current || overlayAdded.current) return;
 
-    // Create overlay container
     const overlay = document.createElement('div');
     overlay.className = 'resume-overlay';
     overlay.style.cssText = `
@@ -79,7 +74,6 @@ const VSLVideoPlayer = () => {
       align-items: center;
     `;
 
-    // Create overlay content
     overlay.innerHTML = `
       <style>
         .resume-icon {
@@ -94,15 +88,7 @@ const VSLVideoPlayer = () => {
           font-size: 1.25rem;
         }
         
-<<<<<<< HEAD
-<<<<<<< HEAD
-        @media (min-width: 768px) {
-=======
         @media (min-width: 640px) {
->>>>>>> dc6b067 (Version 1.8)
-=======
-        @media (min-width: 640px) {
->>>>>>> dc6b06753c6a42f907775ad94a83427f1279e72b
           .resume-icon {
             width: 80px;
             height: 80px;
@@ -116,15 +102,7 @@ const VSLVideoPlayer = () => {
           }
         }
         
-<<<<<<< HEAD
-<<<<<<< HEAD
-        @media (min-width: 1280px) {
-=======
         @media (min-width: 768px) {
->>>>>>> dc6b067 (Version 1.8)
-=======
-        @media (min-width: 768px) {
->>>>>>> dc6b06753c6a42f907775ad94a83427f1279e72b
           .resume-icon {
             width: 100px;
             height: 100px;
@@ -160,12 +138,10 @@ const VSLVideoPlayer = () => {
       </div>
     `;
 
-    // Add overlay to player
     const playerEl = playerRef.current.el();
     playerEl.style.position = 'relative';
     playerEl.appendChild(overlay);
 
-    // Add event listeners
     const continueBtn = overlay.querySelector('#continueBtn');
     const restartBtn = overlay.querySelector('#restartBtn');
 
@@ -191,7 +167,6 @@ const VSLVideoPlayer = () => {
     <div className="w-full flex justify-center">
       <style>
         {`
-          /* Blue play button */
           .video-js .vjs-big-play-button {
             background-color: #3b82f6 !important;
             border-color: #3b82f6 !important;
@@ -205,15 +180,7 @@ const VSLVideoPlayer = () => {
             transform: translate(-50%, -50%) !important;
           }
           
-<<<<<<< HEAD
-<<<<<<< HEAD
-          @media (min-width: 768px) {
-=======
           @media (min-width: 640px) {
->>>>>>> dc6b067 (Version 1.8)
-=======
-          @media (min-width: 640px) {
->>>>>>> dc6b06753c6a42f907775ad94a83427f1279e72b
             .video-js .vjs-big-play-button {
               width: 150px !important;
               height: 80px !important;
@@ -221,15 +188,7 @@ const VSLVideoPlayer = () => {
             }
           }
           
-<<<<<<< HEAD
-<<<<<<< HEAD
-          @media (min-width: 1280px) {
-=======
           @media (min-width: 768px) {
->>>>>>> dc6b067 (Version 1.8)
-=======
-          @media (min-width: 768px) {
->>>>>>> dc6b06753c6a42f907775ad94a83427f1279e72b
             .video-js .vjs-big-play-button {
               width: 100px !important;
               height: 80px !important;
@@ -247,21 +206,12 @@ const VSLVideoPlayer = () => {
             font-size: 40px !important;
           }
           
-          /* Fix for video.js passive event warnings */
           .video-js * {
             touch-action: manipulation;
           }
         `}
       </style>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <div className="relative w-full xl:w-180 aspect-video bg-black">
-=======
       <div className="relative w-full md:w-180 aspect-video bg-black">
->>>>>>> dc6b067 (Version 1.8)
-=======
-      <div className="relative w-full md:w-180 aspect-video bg-black">
->>>>>>> dc6b06753c6a42f907775ad94a83427f1279e72b
         <div data-vjs-player>
           <video
             ref={videoRef}

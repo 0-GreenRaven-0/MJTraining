@@ -10,15 +10,7 @@ const SurveyPage = () => {
   const { validateToken, setToken, userData } = useAuth();
   
   const [currentPage, setCurrentPage] = useState(0);
-<<<<<<< HEAD
-<<<<<<< HEAD
-  const [direction, setDirection] = useState('forward');
-=======
   const [direction, setDirection] = useState('next');
->>>>>>> dc6b067 (Version 1.8)
-=======
-  const [direction, setDirection] = useState('next');
->>>>>>> dc6b06753c6a42f907775ad94a83427f1279e72b
   const [formData, setFormData] = useState({
     experience: '',
     budget: '',
@@ -26,36 +18,15 @@ const SurveyPage = () => {
     effort: '',
     startTime: '',
     commitment: ''
-<<<<<<< HEAD
-<<<<<<< HEAD
-    // Removed 'source' field
   });
   const [errors, setErrors] = useState({});
 
-  // Check token on component mount
-=======
-  });
-  const [errors, setErrors] = useState({});
-
->>>>>>> dc6b067 (Version 1.8)
-=======
-  });
-  const [errors, setErrors] = useState({});
-
->>>>>>> dc6b06753c6a42f907775ad94a83427f1279e72b
   useEffect(() => {
     if (!validateToken('takeSurvey', token)) {
       // Token is invalid - handled in render
     }
   }, [token, validateToken]);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-  // If token is invalid, show error message
-=======
->>>>>>> dc6b067 (Version 1.8)
-=======
->>>>>>> dc6b06753c6a42f907775ad94a83427f1279e72b
   if (!validateToken('takeSurvey', token)) {
     return (
       <div className="section relative flex flex-col justify-center items-center gap-4 min-h-[60vh]">
@@ -78,15 +49,7 @@ const SurveyPage = () => {
     },
     {
       id: 'budget',
-<<<<<<< HEAD
-<<<<<<< HEAD
-      title: 'We only work with users who have sufficient startup capital. To start a Local Dropshipping business, costs involve: Software & marketing. Do you have access to a minimum of $500-$700 to get started?',
-=======
       title: 'We only work with users who have sufficient startup capital. To start a Local Dropshipping business, costs involve: Software & marketing. Do you have access to a minimum of $600 to get started?',
->>>>>>> dc6b067 (Version 1.8)
-=======
-      title: 'We only work with users who have sufficient startup capital. To start a Local Dropshipping business, costs involve: Software & marketing. Do you have access to a minimum of $600 to get started?',
->>>>>>> dc6b06753c6a42f907775ad94a83427f1279e72b
       type: 'radio',
       field: 'budget',
       options: [
@@ -136,13 +99,6 @@ const SurveyPage = () => {
         { value: 'yes2', label: 'I will attend for sure' }
       ]
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-    // Removed the 'source' question entirely
-=======
->>>>>>> dc6b067 (Version 1.8)
-=======
->>>>>>> dc6b06753c6a42f907775ad94a83427f1279e72b
   ];
 
   const totalPages = questions.length;
@@ -162,60 +118,21 @@ const SurveyPage = () => {
   };
 
   const determineQualification = (formData) => {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    // 1. Must have budget
-    if (formData.budget === 'no') return false;
-    
-    // 2. Must have time
-    if (formData.time === 'no') return false;
-    
-    // 3. Must be willing to put in effort
-    if (formData.effort !== 'willing' && formData.effort !== 'whatever') return false;
-    
-    // 4. Must be ready to start soon
-    if (formData.startTime === 'notReady') return false;
-    
-=======
-=======
->>>>>>> dc6b06753c6a42f907775ad94a83427f1279e72b
     if (formData.budget === 'no') return false;
     if (formData.time === 'no') return false;
     if (formData.effort !== 'willing' && formData.effort !== 'whatever') return false;
     if (formData.startTime === 'notReady') return false;
-<<<<<<< HEAD
->>>>>>> dc6b067 (Version 1.8)
-=======
->>>>>>> dc6b06753c6a42f907775ad94a83427f1279e72b
     return true;
   };
 
   const handleNext = async () => {
     if (validatePage()) {
       if (currentPage < totalPages - 1) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        setDirection('forward');
-        setCurrentPage(currentPage + 1);
-      } else {
-        console.log('Survey completed:', formData);
-        
-        // Determine qualification based on survey answers
-        const isQualified = determineQualification(formData);
-        
-        // Generate and store the appropriate token in AuthContext
-=======
-=======
->>>>>>> dc6b06753c6a42f907775ad94a83427f1279e72b
         setDirection('next');
         setCurrentPage(currentPage + 1);
       } else {
         console.log('Survey completed:', formData);
         const isQualified = determineQualification(formData);
-<<<<<<< HEAD
->>>>>>> dc6b067 (Version 1.8)
-=======
->>>>>>> dc6b06753c6a42f907775ad94a83427f1279e72b
 
         if (isQualified) {
           await HaventBookedForm(userData, setToken, navigate);
@@ -228,15 +145,7 @@ const SurveyPage = () => {
 
   const handlePrevious = () => {
     if (currentPage > 0) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-      setDirection('backward');
-=======
       setDirection('prev');
->>>>>>> dc6b067 (Version 1.8)
-=======
-      setDirection('prev');
->>>>>>> dc6b06753c6a42f907775ad94a83427f1279e72b
       setCurrentPage(currentPage - 1);
       setErrors({});
     }
@@ -247,56 +156,6 @@ const SurveyPage = () => {
     setErrors(prev => ({ ...prev, [field]: '' }));
   };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-  // Render the survey questions
-  return (
-    <div className='section relative overflow-hidden!'>
-      <div className='survey-page survey-bg'>
-        <div 
-          key={currentPage}
-          className='flex flex-col gap-3 md:gap-10 xl:gap-2 xl:w-250'
-          style={{
-            animation: direction === 'forward' ? 'slideInForward 0.6s cubic-bezier(0.4, 0, 0.2, 1)' : 'slideInBackward 0.6s cubic-bezier(0.4, 0, 0.2, 1)'
-          }}
-        >
-          <h4 className='survey-tracker'>Page {currentPage + 1} of {totalPages}</h4>
-          <h3 className="survey-title">{currentQuestion.title}</h3>
-
-          {currentQuestion.type === 'radio' && (
-            <div className='survey-form'>
-              {currentQuestion.options.map(option => (
-                <label 
-                  key={option.value} 
-                  className={`radio-label ${formData[currentQuestion.field] === option.value ? 'selected-cyan' : ''}`}
-                >
-                  <input
-                    className='radio-survey'
-                    type="radio"
-                    name={currentQuestion.field}
-                    value={option.value}
-                    checked={formData[currentQuestion.field] === option.value}
-                    onChange={(e) => handleRadioChange(currentQuestion.field, e.target.value)}
-                  />
-                  <span className="radio-text survey-answer font-semibold">{option.label}</span>
-                </label>
-              ))}
-              <div className="error-message-container">
-                {errors[currentQuestion.field] && <div className="error-message">{errors[currentQuestion.field]}</div>}
-              </div>
-            </div>
-          )}
-
-          <div className='flex gap-2'>
-            {currentPage > 0 && (
-              <button className='survey-btn' onClick={handlePrevious}>
-                Previous
-              </button>
-            )}
-            <button className='survey-btn' onClick={handleNext}>
-=======
-=======
->>>>>>> dc6b06753c6a42f907775ad94a83427f1279e72b
   return (
     <div>
       {/* Background patterns */}
@@ -460,155 +319,10 @@ const SurveyPage = () => {
               onClick={handleNext}
               className="cursor-pointer px-7 py-2.5 bg-gradient-to-br from-blue-400 to-blue-500 text-black font-bold rounded-lg shadow-[0_4px_15px_rgba(0,255,255,0.3)] hover:scale-105 hover:shadow-[0_6px_20px_rgba(0,255,255,0.6)] transition-all min-w-[100px]"
             >
-<<<<<<< HEAD
->>>>>>> dc6b067 (Version 1.8)
-=======
->>>>>>> dc6b06753c6a42f907775ad94a83427f1279e72b
               {currentPage === totalPages - 1 ? 'Complete' : 'Next'}
             </button>
           </div>
         </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        
-        <style>{`
-          @keyframes slideInForward {
-            from {
-              opacity: 0;
-              transform: translateX(40px);
-            }
-            to {
-              opacity: 1;
-              transform: translateX(0);
-            }
-          }
-          
-          @keyframes slideInBackward {
-            from {
-              opacity: 0;
-              transform: translateX(-40px);
-            }
-            to {
-              opacity: 1;
-              transform: translateX(0);
-            }
-          }
-          
-          .radio-label {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-            cursor: pointer;
-            padding: 12px 16px;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
-          }
-          
-          .radio-label:hover {
-            background-color: rgba(0, 255, 255, 0.05);
-          }
-          
-          /* Transparent cyan background ONLY for selected option */
-          .radio-label.selected-cyan {
-            background-color: rgba(0, 255, 255, 0.15) !important;
-            border-color: rgba(0, 255, 255, 0.3);
-          }
-          
-          /* Keep original text color - removed text color changes */
-          .radio-label.selected-cyan .radio-text {
-            /* No text color change - keeps original color */
-          }
-          
-          .radio-label input[type="radio"] {
-            appearance: none;
-            width: 22px;
-            height: 22px;
-            border: 2px solid #ccc;
-            border-radius: 50%;
-            margin-right: 16px;
-            position: relative;
-            transition: all 0.3s ease;
-            flex-shrink: 0;
-          }
-          
-          /* Keep original radio button colors - removed cyan border */
-          .radio-label input[type="radio"]:checked {
-            border-color: #3b82f6; /* Keep original blue color */
-          }
-          
-          .radio-label input[type="radio"]:checked::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background-color: #3b82f6; /* Keep original blue color */
-            animation: dotAppear 0.3s ease-out;
-          }
-          
-          /* Don't change radio button color for selected cyan background */
-          .radio-label.selected-cyan input[type="radio"] {
-            border-color: #ccc; /* Keep original border when not checked */
-          }
-          
-          .radio-label.selected-cyan input[type="radio"]:checked {
-            border-color: #3b82f6; /* Keep original blue when checked */
-          }
-          
-          .radio-label.selected-cyan input[type="radio"]:checked::after {
-            background-color: #3b82f6; /* Keep original blue dot */
-          }
-          
-          .radio-text {
-            flex: 1;
-          }
-          
-          .error-message-container {
-            min-height: 24px;
-            transition: min-height 0.3s ease-out;
-          }
-          
-          .error-message {
-            color: red;
-            font-size: 14px;
-            animation: fadeIn 0.3s ease-out;
-            padding: 2px 0;
-            opacity: 1;
-            transform-origin: top;
-          }
-          
-          .error-message-container:empty {
-            min-height: 4px;
-          }
-          
-          @keyframes dotAppear {
-            from {
-              transform: translate(-50%, -50%) scale(0);
-            }
-            to {
-              transform: translate(-50%, -50%) scale(1);
-            }
-          }
-          
-          @keyframes fadeIn {
-            from {
-              opacity: 0;
-              transform: translateY(-5px) scale(0.95);
-            }
-            to {
-              opacity: 1;
-              transform: translateY(0) scale(1);
-            }
-          }
-        `}</style>
-=======
->>>>>>> dc6b067 (Version 1.8)
-=======
->>>>>>> dc6b06753c6a42f907775ad94a83427f1279e72b
       </div>
     </div>
   );
