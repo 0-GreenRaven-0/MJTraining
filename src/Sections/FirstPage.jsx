@@ -1,8 +1,36 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 import { useState, useEffect } from "react"
+>>>>>>> dc6b067 (Version 1.8)
+=======
+import { useState, useEffect } from "react"
+>>>>>>> dc6b06753c6a42f907775ad94a83427f1279e72b
 import PanoramaCarousel from "../Utility/PanoramaCarousel"
 import SubscribeForm from "../Utility/SubscribeForm"
 
 const FirstPage = () => {
+<<<<<<< HEAD
+<<<<<<< HEAD
+  return (
+    <div className="section relative bg-first" >
+      <PanoramaCarousel />
+      <div className="absolute inset-0 p-2"        >
+        <div className="h-full w-full flex flex-col items-center justify-between">
+          <div className="w-full flex flex-col items-center justify-center cloudy-gradient">
+             <h1 
+        className="pt-10 pb-2 text-center font-bold rounded-lg capitalize headline"
+      >
+       Launch your own  <span className="special">profitable</span> Dropshipping Business without <span className="special">wasting your time & budget</span> learning everything from scratch
+      </h1>
+      <h4 className="text-center font-semibold">A Proven System that helped over 400 of our students score their first sale within 2 weeks!</h4>
+          </div>
+         <SubscribeForm/>
+        </div>     
+      </div>
+=======
+=======
+>>>>>>> dc6b06753c6a42f907775ad94a83427f1279e72b
   const [showIntro, setShowIntro] = useState(true)
   const [introFade, setIntroFade] = useState(false)
   const [showContent, setShowContent] = useState(false)
@@ -97,8 +125,20 @@ const FirstPage = () => {
           animation: fadeInText 2s ease-in-out;
         }
       `}</style>
+<<<<<<< HEAD
+>>>>>>> dc6b067 (Version 1.8)
+=======
+>>>>>>> dc6b06753c6a42f907775ad94a83427f1279e72b
     </div>
   )
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 export default FirstPage
+=======
+export default FirstPage
+>>>>>>> dc6b067 (Version 1.8)
+=======
+export default FirstPage
+>>>>>>> dc6b06753c6a42f907775ad94a83427f1279e72b

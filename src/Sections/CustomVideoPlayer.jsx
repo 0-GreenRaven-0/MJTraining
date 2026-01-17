@@ -94,7 +94,15 @@ const VSLVideoPlayer = () => {
           font-size: 1.25rem;
         }
         
+<<<<<<< HEAD
+<<<<<<< HEAD
+        @media (min-width: 768px) {
+=======
         @media (min-width: 640px) {
+>>>>>>> dc6b067 (Version 1.8)
+=======
+        @media (min-width: 640px) {
+>>>>>>> dc6b06753c6a42f907775ad94a83427f1279e72b
           .resume-icon {
             width: 80px;
             height: 80px;
@@ -108,7 +116,15 @@ const VSLVideoPlayer = () => {
           }
         }
         
+<<<<<<< HEAD
+<<<<<<< HEAD
+        @media (min-width: 1280px) {
+=======
         @media (min-width: 768px) {
+>>>>>>> dc6b067 (Version 1.8)
+=======
+        @media (min-width: 768px) {
+>>>>>>> dc6b06753c6a42f907775ad94a83427f1279e72b
           .resume-icon {
             width: 100px;
             height: 100px;
@@ -189,7 +205,15 @@ const VSLVideoPlayer = () => {
             transform: translate(-50%, -50%) !important;
           }
           
+<<<<<<< HEAD
+<<<<<<< HEAD
+          @media (min-width: 768px) {
+=======
           @media (min-width: 640px) {
+>>>>>>> dc6b067 (Version 1.8)
+=======
+          @media (min-width: 640px) {
+>>>>>>> dc6b06753c6a42f907775ad94a83427f1279e72b
             .video-js .vjs-big-play-button {
               width: 150px !important;
               height: 80px !important;
@@ -197,7 +221,15 @@ const VSLVideoPlayer = () => {
             }
           }
           
+<<<<<<< HEAD
+<<<<<<< HEAD
+          @media (min-width: 1280px) {
+=======
           @media (min-width: 768px) {
+>>>>>>> dc6b067 (Version 1.8)
+=======
+          @media (min-width: 768px) {
+>>>>>>> dc6b06753c6a42f907775ad94a83427f1279e72b
             .video-js .vjs-big-play-button {
               width: 100px !important;
               height: 80px !important;
@@ -221,7 +253,15 @@ const VSLVideoPlayer = () => {
           }
         `}
       </style>
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <div className="relative w-full xl:w-180 aspect-video bg-black">
+=======
       <div className="relative w-full md:w-180 aspect-video bg-black">
+>>>>>>> dc6b067 (Version 1.8)
+=======
+      <div className="relative w-full md:w-180 aspect-video bg-black">
+>>>>>>> dc6b06753c6a42f907775ad94a83427f1279e72b
         <div data-vjs-player>
           <video
             ref={videoRef}

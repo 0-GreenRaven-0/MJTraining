@@ -10,7 +10,15 @@ const Thankyou = () => {
 
   if (!isValidToken) {
     return (
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <div className="section relative flex flex-col justify-center items-center gap-4 survey-bg text-black">
+=======
       <div className="section relative flex flex-col justify-center items-center gap-4 bg-first text-white">
+>>>>>>> dc6b067 (Version 1.8)
+=======
+      <div className="section relative flex flex-col justify-center items-center gap-4 bg-first text-white">
+>>>>>>> dc6b06753c6a42f907775ad94a83427f1279e72b
         <h1 className="text-center text-3xl font-bold">You Haven't Booked a call yet!</h1>
         <h2 className="text-center text-xl">
           Please go back and book your call
@@ -26,7 +34,15 @@ const Thankyou = () => {
   }
 
   return (
+<<<<<<< HEAD
+<<<<<<< HEAD
+       <div className="section relative flex flex-col justify-center items-center gap-4 survey-bg text-black">
+=======
        <div className="section relative flex flex-col justify-center items-center gap-4 bg-first  text-white">
+>>>>>>> dc6b067 (Version 1.8)
+=======
+       <div className="section relative flex flex-col justify-center items-center gap-4 bg-first  text-white">
+>>>>>>> dc6b06753c6a42f907775ad94a83427f1279e72b
         <h1 className="text-center text-3xl font-bold">You're All Set!</h1>
         <h2 className="text-center text-xl">
           Check your email for the zoom call link!

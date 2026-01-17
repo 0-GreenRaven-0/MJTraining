@@ -13,7 +13,15 @@ const PanoramaCarousel = () => {
   const isXl = useMediaQuery({ minWidth: 1280 });
   const is2Xl = useMediaQuery({ minWidth: 1536 });
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+  let size = isXl? '35vw, 35vh' : isMd ? '45vw, 45vh' : '34vw, 34vh';
+=======
   let size = isMd? '28vw, 28vh' : isSm ? '45vw, 45vh' : '34vw, 34vh';
+>>>>>>> dc6b067 (Version 1.8)
+=======
+  let size = isMd? '28vw, 28vh' : isSm ? '45vw, 45vh' : '34vw, 34vh';
+>>>>>>> dc6b06753c6a42f907775ad94a83427f1279e72b
 
   const images = [
     'https://ik.imagekit.io/greenraven/MJ/Testimonials/Gemini_Generated_Image_3wxoat3wxoat3wxo__1_-removebg-preview.png?updatedAt=1765645485707',
@@ -44,7 +52,15 @@ const PanoramaCarousel = () => {
 
       carousel.on("update", () => {
         const depth = 200;
+<<<<<<< HEAD
+<<<<<<< HEAD
+        let rotation = isLg ? 23 : 30;
+=======
         let rotation = isMd ? 18 : 30;
+>>>>>>> dc6b067 (Version 1.8)
+=======
+        let rotation = isMd ? 18 : 30;
+>>>>>>> dc6b06753c6a42f907775ad94a83427f1279e72b
         const scale = 1 / (180 / rotation);
         const halfAngle = (rotation * Math.PI) / 180 / 2;
         
