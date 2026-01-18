@@ -9,25 +9,18 @@ const PanoramaCarousel = () => {
 
   const isSm = useMediaQuery({ minWidth: 640 });
   const isMd = useMediaQuery({ minWidth: 768 });
-  const isLg = useMediaQuery({ minWidth: 1024 });
-  const isXl = useMediaQuery({ minWidth: 1280 });
-  const is2Xl = useMediaQuery({ minWidth: 1536 });
 
-
-  let size = isMd? '28vw, 28vh' : isSm ? '45vw, 45vh' : '34vw, 34vh';
-
+  let size = isMd? '30vw, 30vh' : isSm ? '45vw, 45vh' : '37vw, 37vh';
 
   const images = [
-    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Gemini_Generated_Image_3wxoat3wxoat3wxo__1_-removebg-preview.png?updatedAt=1765645485707',
-    'https://ik.imagekit.io/greenraven/MJ/Testimonials/12.png?updatedAt=1765296260813',
-    'https://ik.imagekit.io/greenraven/MJ/Testimonials/23.png?updatedAt=1765296260527',
-    'https://ik.imagekit.io/greenraven/MJ/Testimonials/20.png?updatedAt=1765296260747',
-    'https://ik.imagekit.io/greenraven/MJ/Testimonials/18.png?updatedAt=1765296259277',
-    'https://ik.imagekit.io/greenraven/MJ/Testimonials/17.png?updatedAt=1765296259510',
-    'https://ik.imagekit.io/greenraven/MJ/Testimonials/9.png?updatedAt=1765296259228',
-    'https://ik.imagekit.io/greenraven/MJ/Testimonials/4.png?updatedAt=1765296259199',
-    'https://ik.imagekit.io/greenraven/MJ/Testimonials/2.png?updatedAt=1765296258983',
-    'https://ik.imagekit.io/greenraven/MJ/Testimonials/16.png?updatedAt=1765296258922',
+    'https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(1).png',
+    'https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(3).png',
+    'https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(2).png',
+    'https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(4).png',
+    'https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201.png',
+    'https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(5).png',
+    'https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(6).png',
+    'https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(7).png',
   ];
 
   useEffect(() => {
@@ -46,10 +39,7 @@ const PanoramaCarousel = () => {
 
       carousel.on("update", () => {
         const depth = 200;
-
-
-
-        let rotation = isMd ? 18 : 30;
+        let rotation = isMd ? 18 : isSm ? 22 : 24;
 
         const scale = 1 / (180 / rotation);
         const halfAngle = (rotation * Math.PI) / 180 / 2;
@@ -67,8 +57,7 @@ const PanoramaCarousel = () => {
       setIsReady(true);
       carouselRef.current = carousel;
 
-      // Auto-scroll animation using _track
-      const speed = 0.6; // Change this value to control speed (higher = faster)
+      const speed = 0.6;
       let lastTime = performance.now();
       
       const autoScroll = (currentTime) => {
@@ -83,7 +72,6 @@ const PanoramaCarousel = () => {
       
       autoScrollRef.current = requestAnimationFrame(autoScroll);
       
-      // Resume animation when window regains focus
       const handleVisibilityChange = () => {
         if (!document.hidden) {
           lastTime = performance.now();
@@ -110,25 +98,23 @@ const PanoramaCarousel = () => {
         carouselRef.current.destroy();
       }
     };
-  }, []);
+  }, [isMd]);
 
   return (
-    <div >
+    <div className="w-screen relative scrollbar-hide" style={{ height: `max(${size})` }}>
       <div
         ref={containerRef}
-        className="carousel fixed top-1/2 left-0 w-full opacity-90! transition-opacity duration-[250ms]"
+        className="carousel absolute inset-0 transition-opacity duration-[250ms]"
         style={{
-          transform: 'translateY(-50%)',
-          height: `max(${size})`,
           perspective: `calc(max(${size}) * 5.55)`,
           transformStyle: 'preserve-3d',
         }}
       >
         {images.map((src, index) => (
-          <div key={index} className="slide absolute rounded-2xl overflow-hidden" style={{
+          <div key={index} className="slide absolute  " style={{
             width: `calc(max(${size}) * 0.6)`,
-            height: `max(${size})`,
-            boxShadow: '0px 0px 50px 0px rgba(0, 0, 0, 0.1)',
+            height: `max(${size + 5})`,
+         
           }}>
             <img
               src={src}

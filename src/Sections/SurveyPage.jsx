@@ -30,7 +30,7 @@ const SurveyPage = () => {
   if (!validateToken('takeSurvey', token)) {
     return (
       <div className="section relative flex flex-col justify-center items-center gap-4 min-h-[60vh]">
-        <h1 className="text-center text-3xl font-bold">Please go back and watch the free guide first</h1>
+        <h1 className="text-center text-3xl font-bold text-gray-900">Please go back and watch the free guide first</h1>
       </div>
     );
   }
@@ -71,7 +71,7 @@ const SurveyPage = () => {
     },
     {
       id: 'effort',
-      title: "This isn't a get-rich-quick scheme - it requires real work and effort to get the same results as our students. Are you willing to put in the work?",
+      title: "This isn't a get-rich-quick scheme - it requires real work and effort to get the same results as our users. Are you willing to put in the work?",
       type: 'radio',
       field: 'effort',
       options: [
@@ -158,10 +158,6 @@ const SurveyPage = () => {
 
   return (
     <div>
-      {/* Background patterns */}
-      <div className='bg-patterns w-full h-[50%] hero-asset absolute inset-0 z-0 opacity-30 pointer-events-none'/>
-
-      
       <style>{`
         .page-container {
           position: relative;
@@ -230,27 +226,27 @@ const SurveyPage = () => {
         }
       `}</style>
 
-      <div className="flex items-center justify-center p-4 relative z-10">
+      <div className="flex items-center justify-center p-4 py-12">
         <div className="w-full max-w-2xl">
           {/* Title */}
-          <h1 className="text-blue-300 text-2xl font-bold text-center mb-4">
+          <h1 className="text-blue-600 text-2xl font-bold text-center mb-4">
             Complete This Quick Form To Book Your Call:
           </h1>
-          <h2 className="text-white text-center">
+          <h2 className="text-gray-700 text-center">
             Before we book you a call with our team, we need to ask you few things to decide whether we are fit to help you or not.
           </h2>
           <br/>
           
           {/* Progress Bar */}
-          <div className="bg-white/10 h-1.5 rounded-full mb-6">
+          <div className="bg-gray-200 h-1.5 rounded-full mb-6">
             <div
-              className="bg-gradient-to-r from-blue-400 to-blue-500 h-full rounded-full transition-all duration-500 progress-bar-shine"
+              className="bg-gradient-to-r from-blue-500 to-blue-600 h-full rounded-full transition-all duration-500 progress-bar-shine"
               style={{ width: `${((currentPage + 1) / totalPages) * 100}%` }}
             />
           </div>
 
           {/* Page Counter */}
-          <p className="text-white text-lg pb-5 pl-1 w-full">
+          <p className="text-gray-600 text-lg pb-5 pl-1 w-full">
             Page {currentPage + 1} of {totalPages}
           </p>
 
@@ -268,7 +264,7 @@ const SurveyPage = () => {
                 }`}
               >
                 <div>
-                  <h2 className="text-white text-base font-semibold mb-3 leading-relaxed">
+                  <h2 className="text-gray-900 text-base font-semibold mb-3 leading-relaxed">
                     {question.title}
                   </h2>
                   <div className="space-y-2">
@@ -277,8 +273,8 @@ const SurveyPage = () => {
                         key={option.value}
                         className={`flex items-center gap-3 px-4 py-2.5 rounded-xl cursor-pointer transition-all ${
                           formData[question.field] === option.value
-                            ? 'bg-blue-400/20 border-2 border-blue-400 shadow-[0_4px_15px_rgba(0,255,255,0.3)]'
-                            : 'bg-black/40 border-2 border-blue-400/30 hover:border-blue-400 hover:bg-blue-400/10 hover:translate-x-1'
+                            ? 'bg-blue-50 border-2 border-blue-500 shadow-lg'
+                            : 'bg-white border-2 border-gray-300 hover:border-blue-400 hover:bg-blue-50 hover:translate-x-1'
                         }`}
                       >
                         <input
@@ -289,14 +285,14 @@ const SurveyPage = () => {
                           onChange={(e) => handleRadioChange(question.field, e.target.value)}
                           className="appearance-none"
                         />
-                        <span className="text-white text-base font-medium">
+                        <span className="text-gray-900 text-base font-medium">
                           {option.label}
                         </span>
                       </label>
                     ))}
                   </div>
                   {errors[question.field] && (
-                    <p className="text-red-400 text-sm mt-2 bg-red-400/10 border border-red-400 rounded-lg px-3 py-2">
+                    <p className="text-red-600 text-sm mt-2 bg-red-50 border border-red-300 rounded-lg px-3 py-2">
                       {errors[question.field]}
                     </p>
                   )}
@@ -310,14 +306,14 @@ const SurveyPage = () => {
             {currentPage > 0 && (
               <button
                 onClick={handlePrevious}
-                className="cursor-pointer px-7 py-2.5 bg-gradient-to-br from-blue-400 to-blue-500 text-black font-bold rounded-lg shadow-[0_4px_15px_rgba(0,255,255,0.4)] hover:scale-105 hover:shadow-[0_6px_20px_rgba(0,255,255,0.6)] transition-all min-w-[100px]"
+                className="cursor-pointer px-7 py-2.5 bg-gradient-to-br from-blue-500 to-blue-600 text-white font-bold rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-all min-w-[100px]"
               >
                 Previous
               </button>
             )}
             <button
               onClick={handleNext}
-              className="cursor-pointer px-7 py-2.5 bg-gradient-to-br from-blue-400 to-blue-500 text-black font-bold rounded-lg shadow-[0_4px_15px_rgba(0,255,255,0.3)] hover:scale-105 hover:shadow-[0_6px_20px_rgba(0,255,255,0.6)] transition-all min-w-[100px]"
+              className="cursor-pointer px-7 py-2.5 bg-gradient-to-br from-blue-500 to-blue-600 text-white font-bold rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-all min-w-[100px]"
             >
               {currentPage === totalPages - 1 ? 'Complete' : 'Next'}
             </button>

@@ -6,30 +6,14 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 
 const images = [
-  "https://ik.imagekit.io/greenraven/MJ/Testimonials/Gemini_Generated_Image_3wxoat3wxoat3wxo__1_-removebg-preview.png",
-  "https://ik.imagekit.io/greenraven/MJ/Testimonials/21.png",
-  "https://ik.imagekit.io/greenraven/MJ/Testimonials/12.png",
-  "https://ik.imagekit.io/greenraven/MJ/Testimonials/1.png",
-  "https://ik.imagekit.io/greenraven/MJ/Testimonials/20.png",
-  "https://ik.imagekit.io/greenraven/MJ/Testimonials/8.png",
-  "https://ik.imagekit.io/greenraven/MJ/Testimonials/23.png",
-  "https://ik.imagekit.io/greenraven/MJ/Testimonials/7.png",
-  "https://ik.imagekit.io/greenraven/MJ/Testimonials/11.png",
-  "https://ik.imagekit.io/greenraven/MJ/Testimonials/25.png",
-  "https://ik.imagekit.io/greenraven/MJ/Testimonials/22.png",
-  "https://ik.imagekit.io/greenraven/MJ/Testimonials/19.png",
-  "https://ik.imagekit.io/greenraven/MJ/Testimonials/14.png",
-  "https://ik.imagekit.io/greenraven/MJ/Testimonials/6.png",
-  "https://ik.imagekit.io/greenraven/MJ/Testimonials/17.png",
-  "https://ik.imagekit.io/greenraven/MJ/Testimonials/15.png",
-  "https://ik.imagekit.io/greenraven/MJ/Testimonials/13.png",
-  "https://ik.imagekit.io/greenraven/MJ/Testimonials/18.png",
-  "https://ik.imagekit.io/greenraven/MJ/Testimonials/9.png",
-  "https://ik.imagekit.io/greenraven/MJ/Testimonials/10.png",
-  "https://ik.imagekit.io/greenraven/MJ/Testimonials/4.png",
-  "https://ik.imagekit.io/greenraven/MJ/Testimonials/3.png",
-  "https://ik.imagekit.io/greenraven/MJ/Testimonials/2.png",
-  "https://ik.imagekit.io/greenraven/MJ/Testimonials/16.png"
+    'https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(1).png',
+    'https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(3).png',
+    'https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(2).png',
+    'https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(4).png',
+    'https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201.png',
+    'https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(5).png',
+    'https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(6).png',
+    'https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(7).png',
 ]
 
 const Carousel = ({ className = '' }) => {

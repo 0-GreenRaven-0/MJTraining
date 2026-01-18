@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import PanoramaCarousel from "../Utility/PanoramaCarousel"
 import SubscribeForm from "../Utility/SubscribeForm"
+import {FaCheckCircle} from 'react-icons/fa';
 
 const FirstPage = () => {
   const [showIntro, setShowIntro] = useState(true)
@@ -31,49 +32,87 @@ const FirstPage = () => {
   }, [])
 
   return (
-    <div className="section relative bg-first overflow-hidden">
-      <PanoramaCarousel />
-      
+    <div className="relative bg-first overflow-x-hidden overflow-y-auto scrollbar-hide p-2 pt-0">
       {/* Intro Screen */}
       {showIntro && (
         <div 
-          className={`absolute inset-0 bg-blue-900 flex items-center justify-center z-50 transition-opacity duration-700 ${
+          className={`fixed inset-0 bg-blue-900 flex items-center justify-center z-50 transition-opacity duration-700 ${
             introFade ? 'opacity-0' : 'opacity-100'
           }`}
         >
           <h1 
             className="text-white font-bold text-center px-4 animate-fade-in-text max-w-full"
           >
-            Dropshipping has never been this easier!
+           Stop guessing what sells, start testing with low risk.
           </h1>
         </div>
       )}
 
       {/* Main Content */}
-      <div className="absolute inset-0 p-2 overflow-hidden">
-        <div className="h-full w-full flex flex-col items-center justify-between overflow-hidden">
-          <div 
-            className={`w-full flex flex-col items-center justify-center cloudy-gradient transition-all duration-1000 ${
-              showContent ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-20'
-            }`}
-          >
-            <h1 
-              className="pt-10 md:pt-2 px-2 pb-2 text-center font-bold rounded-lg capitalize headline"
-            >
-              Launch your own <span className="special">profitable</span> Dropshipping Business without <span className="special">wasting your time & budget</span> learning everything from scratch
-            </h1>
-            <h4 className="text-center font-semibold">
-              A Proven System that helped over 400 of our students score their first sale within 2 weeks!
-            </h4>
+      <div className="h-full w-full flex flex-col items-center justify-between ">
+        <div 
+          className={`w-full flex flex-col items-center justify-center cloudy-gradient transition-all duration-1000 `}
+        >
+          <div className="flex w-screen flex-col gap-2 justify-center items-center text-white">
+            
+            <div className="flex items-center justify-center gap-1">
+                 <img className="w-20" src="https://ik.imagekit.io/greenraven/MJ/Droparabia.png?updatedAt=1764957826813"/>
+                 
+                 <p className="text-4xl font-bold">
+                  DropArabia
+                 </p>
+            </div>
+            <h4 className="text-center font-semibold pb-2">
+            While others are selling you courses, we built a software to help you...
+          </h4>
           </div>
-          
-          <div 
-            className={`transition-all duration-1000 ${
-              showContent ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
-            }`}
+          <h1 
+            className=" md:pt-2 px-2 pb-2 text-center font-bold rounded-lg capitalize headline"
           >
-            <SubscribeForm />
-          </div>
+            Launch your own <span className="special">profitable</span> Dropshipping Business without <span className="special">wasting your budget</span>  on huge inventories using our dropshipping Software!
+          </h1>
+        
+        </div>
+ <br/>
+         <h3 className="text-center font-bold">
+            A Proven System that helped 250+ user score their first sale within 2 weeks!
+          </h3>
+        
+        <PanoramaCarousel />
+           <br/>
+ 
+           
+        <div 
+          className={`flex flex-col items-center lg:flex-row gap-10 transition-all duration-1000 `}
+        >
+   
+<ul className="space-y-3 font-semibold text-lg sm:text-2xl md:text-xl">
+  <h2 className="flex items-center font-normal">With   
+      <div className="px-2 flex items-center gap-1">
+        <img className="w-12" src="https://ik.imagekit.io/greenraven/MJ/Droparabia.png?updatedAt=1764957826813"/>
+                 <p className="text-2xl font-bold">
+                  DropArabia:
+                 </p>
+            </div>
+            </h2>
+  <li className="flex items-center gap-3">
+    <FaCheckCircle className="text-blue-500 flex-shrink-0 bullet-icon" />
+    <span>Test Products with low budget</span>
+  </li>
+  <li className="flex items-center gap-3">
+    <FaCheckCircle className="text-blue-500 flex-shrink-0 bullet-icon" />
+    <span>Automate shipment & order fulfillment</span>
+  </li>
+  <li className="flex items-center gap-3">
+    <FaCheckCircle className="text-blue-500 flex-shrink-0 bullet-icon" />
+    <span>Build your own Brand through private Labeling</span>
+  </li>
+  <li className="flex items-center gap-3">
+    <FaCheckCircle className="text-blue-500 flex-shrink-0 bullet-icon" />
+    <span>Launch your own store withing 2 weeks</span>
+  </li>
+</ul>
+          <SubscribeForm />
         </div>
       </div>
 

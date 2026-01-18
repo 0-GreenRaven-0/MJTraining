@@ -5,32 +5,40 @@ const Thankyou = () => {
   const { token } = useParams();
   const { validateToken } = useAuth();
 
-  // Check if the URL token is valid and matches 'booked' type
   const isValidToken = validateToken('booked', token);
 
   if (!isValidToken) {
     return (
-      <div className="section relative flex flex-col justify-center items-center gap-4 bg-first text-white">
-        <h1 className="text-center text-3xl font-bold">You Haven't Booked a call yet!</h1>
-        <h2 className="text-center text-xl">
-          Please go back and book your call
-        </h2>
-        <button 
-          className="shining-button p-2 text-xl mt-4"
-          onClick={() => window.history.back()}
-        >
-          Go Back
-        </button>
+      <div className="section relative flex flex-col justify-center items-center gap-4 py-20">
+        <div className="bg-white rounded-2xl shadow-xl border-2 border-gray-200 p-8 max-w-md text-center">
+          <h1 className="text-3xl font-bold text-gray-900 mb-4">You Haven't Booked a call yet!</h1>
+          <h2 className="text-xl text-gray-700 mb-6">
+            Please go back and book your call
+          </h2>
+          <button 
+            className="px-7 py-3 bg-gradient-to-br from-blue-500 to-blue-600 text-white font-bold rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-all text-xl w-full"
+            onClick={() => window.history.back()}
+          >
+            Go Back
+          </button>
+        </div>
       </div>
     );
   }
 
   return (
-    <div className="section relative flex flex-col justify-center items-center gap-4 bg-first text-white">
-      <h1 className="text-center text-3xl font-bold">You're All Set!</h1>
-      <h2 className="text-center text-xl">
-        Check your email for the zoom call link!
-      </h2>
+    <div className="section relative flex flex-col justify-center items-center gap-4 py-20">
+      <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl shadow-2xl border-2 border-blue-200 p-12 max-w-2xl text-center">
+        <div className="mb-6">
+          <svg className="w-20 h-20 mx-auto text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+        </div>
+        <h1 className="text-4xl font-bold text-gray-900 mb-4">You're All Set!</h1>
+        <h2 className="text-xl text-gray-700">
+          Check your email for the zoom call link!
+        </h2>
+      </div>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import { FaEnvelope, FaUser, FaUnlock } from "react-icons/fa"
+import { FaEnvelope, FaUser, FaUnlock} from "react-icons/fa"
 import { useState } from "react"
 import { useAuth } from "./AuthContext"
 import { useNavigate } from "react-router-dom"
@@ -75,7 +75,7 @@ const SubscribeForm = () => {
       
       {/* Your Visible Form */}
       <form className="sub-form cloudy-gradient" onSubmit={handleSubmit}>
-        <h3 className="text-center font-semibold">Subscribe to Watch the Free guide</h3>
+        <h3 className="text-center font-semibold text-white">Wanna learn how?</h3>
         
         {error && (
           <div className="error-message text-red-500 text-center mb-3">
@@ -123,8 +123,8 @@ const SubscribeForm = () => {
             <>
               <FaUnlock className="text-5xl" />
               <div className="inside-sub-btn">
-                <p className="txt-1">Unlock The Free Guide!</p>
-                <h4 className="txt-2">Discover how dropshipping actually works!</h4>
+                <p className="txt-1">Subscribe to Learn More!</p>
+                <h4 className="txt-2">Discover how DropArabia actually works!</h4>
               </div>
             </>
           )}

@@ -9,6 +9,7 @@ import Thankyou from "./Sections/Thankyou";
 import { AuthProvider } from "./Utility/AuthContext";
 
 const App = () => {
+
   return (
     <AuthProvider>
       <Routes>

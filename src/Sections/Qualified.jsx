@@ -14,12 +14,12 @@ const Qualified = () => {
   if (!isValidToken) {
     return (
       <div className="section relative flex flex-col justify-center items-center gap-4 min-h-[60vh]">
-        <h1 className="text-center text-3xl font-bold">No cheating allowed! 😏</h1>
-        <h2 className="text-center text-xl">
+        <h1 className="text-center text-3xl font-bold text-gray-900">No cheating allowed! 😏</h1>
+        <h2 className="text-center text-xl text-gray-700">
           Please go back and finish the survey first
         </h2>
         <button 
-          className="shining-button p-2 text-xl mt-4"
+          className="px-7 py-3 bg-gradient-to-br from-blue-500 to-blue-600 text-white font-bold rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-all text-xl mt-4"
           onClick={() => window.history.back()}
         >
           Go Back
@@ -88,23 +88,21 @@ const Qualified = () => {
 
   return (
     <div>
-      <div className='bg-patterns w-full h-[50%] hero-asset absolute inset-0 z-0 opacity-30 pointer-events-none'/>
-
-      <div className='flex items-center justify-center p-4 min-h-screen relative z-10' ref={containerRef}>
+      <div className='flex items-center justify-center p-4 min-h-screen' ref={containerRef}>
         <div className='w-full max-w-4xl space-y-6'>
           <div className='text-center space-y-4'>
-            <h2 className="font-bold text-blue-300">
+            <h1 className="font-bold text-blue-600">
               We're a good fit for you! 🎉
-            </h2>
+            </h1>
             
-            <p className="font-semibold text-white">
+            <h3 className="font-semibold text-gray-800">
               Our team is looking forward to get you started on your dropshipping journey!
-            </p>
+            </h3>
             
-            <h4 className="text-white">
+            <h4 className="text-gray-700">
               Select an available time that best suits you
             </h4>
-            <h4 className="text-white">
+            <h4 className="text-gray-600">
               Wait for the calendar form to load...
             </h4>
           </div>
