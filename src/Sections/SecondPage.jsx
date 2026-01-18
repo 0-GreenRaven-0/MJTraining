@@ -63,19 +63,18 @@ const SecondPage = () => {
       
         <div className="text-center font-semibold flex flex-col gap-2">
 
-          <h2>
-          Case studies of <span className="font-bold text-accent1">250</span>+ member from our
-          </h2>
+          <h3>
+          Case studies of <span className="font-bold text-accent1">250</span>+ member using the software from our
+          </h3>
                                          <div className="flex items-center justify-center gap-1">
                  <img className="w-20" src="https://ik.imagekit.io/greenraven/MJ/dropvault.png?updatedAt=1761577922501"/>
                  
-                 <p className="text-4xl font-bold">
+                 <p className="text-2xl md:text-4xl font-bold">
                   DropVault Community
                  </p>
-                     <h2>
-          who are actively using the system
-          </h2>
+  
             </div>
+   
            <a className="text-accent1 font-normal hover:text-purple-800" href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3ODQ5NzQ0Mjc5OTk4NTU5?story_media_id=3435351326684433663_54543950174&igsh=MTlvbzJ6bWJvend5cw==">Click Here to see the latest reviews of our members</a>
           <Carousel/>
         </div>
