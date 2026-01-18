@@ -75,7 +75,7 @@ const SecondPage = () => {
   
             </div>
    
-           <a className="text-accent1 font-normal hover:text-purple-800" href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3ODQ5NzQ0Mjc5OTk4NTU5?story_media_id=3435351326684433663_54543950174&igsh=MTlvbzJ6bWJvend5cw==">Click Here to see the latest reviews of our members</a>
+           <a className="text-accent1 font-normal hover:text-purple-800" href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3ODQ5NzQ0Mjc5OTk4NTU5?story_media_id=3435351326684433663_54543950174&igsh=MTlvbzJ6bWJvend5cw==">Click Here to see the latest reviews</a>
           <Carousel/>
         </div>
       </div>
