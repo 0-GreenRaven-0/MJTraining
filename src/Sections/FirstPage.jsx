@@ -62,7 +62,7 @@ const FirstPage = () => {
                   DropArabia
                  </p>
             </div>
-            <h4 className="text-center font-semibold pb-2">
+            <h4 className="text-center font-semibold p-2">
             While others are selling you courses, we built a software to help you...
           </h4>
           </div>
@@ -80,8 +80,7 @@ const FirstPage = () => {
         
         <PanoramaCarousel />
            <br/>
- 
-           
+
         <div 
           className={`flex flex-col items-center lg:flex-row gap-10 transition-all duration-1000 `}
         >
