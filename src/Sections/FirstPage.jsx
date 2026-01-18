@@ -108,7 +108,7 @@ const FirstPage = () => {
   </li>
   <li className="flex items-center gap-3">
     <FaCheckCircle className="text-blue-500 flex-shrink-0 bullet-icon" />
-    <span>Launch your own store withing 2 weeks</span>
+    <span>Launch your own store within 2 weeks</span>
   </li>
 </ul>
           <SubscribeForm />

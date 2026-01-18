@@ -111,11 +111,11 @@ const Carousel = ({ className = '' }) => {
           </Swiper>
 
           {/* Navigation Buttons */}
-          <div className="swiper-button-prev-custom absolute left-0 top-1/2 -translate-y-1/2 z-10 cursor-pointer bg-secondary rounded-full flex items-center justify-center text-black hover:text-accent1 transition-colors">
+          <div className="swiper-button-prev-custom absolute left-4 top-1/2 -translate-y-1/2 z-10 cursor-pointer bg-secondary rounded-full flex items-center justify-center text-black hover:text-accent1 transition-colors">
             <FaArrowLeft className='md:text-6xl'/>
           </div>
 
-          <div className="swiper-button-next-custom absolute right-0 top-1/2 -translate-y-1/2 z-10 cursor-pointer bg-secondary rounded-full flex items-center justify-center text-black hover:text-accent1 transition-colors">
+          <div className="swiper-button-next-custom absolute right-4 top-1/2 -translate-y-1/2 z-10 cursor-pointer bg-secondary rounded-full flex items-center justify-center text-black hover:text-accent1 transition-colors">
             <FaArrowRight className='md:text-6xl'/>
           </div>
         </div>

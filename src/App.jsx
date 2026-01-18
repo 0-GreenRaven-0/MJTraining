@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import FirstPage from "./Sections/FirstPage";
 import SecondPage from './Sections/SecondPage';
 import SurveyPage from './Sections/SurveyPage';
@@ -7,8 +7,15 @@ import Unqualified from "./Sections/Unqualified";
 import NotFound from "./Utility/NotFound";
 import Thankyou from "./Sections/Thankyou";
 import { AuthProvider } from "./Utility/AuthContext";
+import { useEffect } from "react";
 
 const App = () => {
+
+  const location = useLocation()
+
+  useEffect(() => {
+  window.scrollTo(0, 0);
+}, [location.pathname]);
 
   return (
     <AuthProvider>
