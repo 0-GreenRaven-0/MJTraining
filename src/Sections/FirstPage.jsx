@@ -68,7 +68,7 @@ const FirstPage = () => {
           <h1 
             className=" md:pt-2 px-2 pb-2 text-center font-bold rounded-lg capitalize headline"
           >
-            Launch your own <span className="special">profitable</span> Dropshipping Business without wasting <span className="special">Thousands of dollar</span> on inventories that might not sell.
+            Launch your own <span className="special">profitable</span> Dropshipping Business without wasting <span className="special">Thousands of dollars</span> on an inventory that might not sell.
           </h1>
         
         </div>
