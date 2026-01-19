@@ -17,6 +17,7 @@ export const UnqualifiedForm = async (userData, setToken, navigate) => {
           first_name: userData.name,
           fields: {
             token: unqualifiedToken,
+            phone_number: userData.phone,
             source: 'unqualified_survey_result'
           }
         })

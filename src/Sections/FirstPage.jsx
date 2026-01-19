@@ -55,9 +55,8 @@ const FirstPage = () => {
         >
           <div className="flex w-screen flex-col gap-2 justify-center items-center text-white">
             
-            <div className="flex items-center justify-center gap-1">
-                 <img className="w-20" src="https://ik.imagekit.io/greenraven/MJ/Droparabia.png?updatedAt=1764957826813"/>
-                 
+            <div className="flex items-center justify-center gap-1 w-full">
+                 <img className="w-25" src="https://ik.imagekit.io/greenraven/MJ/Droparabia.png?updatedAt=1764957826813"/>
                  <p className="text-4xl font-bold">
                   DropArabia
                  </p>
@@ -69,7 +68,7 @@ const FirstPage = () => {
           <h1 
             className=" md:pt-2 px-2 pb-2 text-center font-bold rounded-lg capitalize headline"
           >
-            Launch your own <span className="special">profitable</span> Dropshipping Business without <span className="special">wasting your budget</span>  on huge inventories using our dropshipping Software!
+            Launch your own <span className="special">profitable</span> Dropshipping Business without wasting <span className="special">Thousands of dollar</span> on inventories that might not sell.
           </h1>
         
         </div>

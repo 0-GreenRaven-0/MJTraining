@@ -54,7 +54,7 @@ html{
   }
 
   .form-input{
-    @apply bg-white text-black p-2 rounded-xl sm:text-3xl md:text-xl sm:p-5 md:p-2
+    @apply bg-white text-black p-2 rounded-xl sm:text-3xl md:text-sm sm:p-5 md:p-2
   }
 
   .input-icon{
@@ -62,7 +62,7 @@ html{
   }
 
   .form-input::placeholder{
-    @apply text-black font-semibold
+    @apply text-gray-600 font-semibold
   }
 
   .sub-btn{
@@ -265,7 +265,7 @@ html{
 }
 
 .shining-button:hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
 }
 
 .shining-button::after {

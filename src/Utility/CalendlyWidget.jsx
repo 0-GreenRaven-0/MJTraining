@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from "./AuthContext";
 import {QualifiedForm} from './QualifiedForm'
 
-const CalendlyWidget = ({ url = "https://calendly.com/greenraven1000/grilled-cheese", style = {}, className="" }) => {
+const CalendlyWidget = ({ url = "https://calendly.com/d/cx6h-n22-cr7/45-min-droparabia-advisory-call", style = {}, className="" }) => {
   const navigate = useNavigate();
   const { userData, setToken } = useAuth();
   const [scriptLoaded, setScriptLoaded] = useState(false);
@@ -58,12 +58,12 @@ const CalendlyWidget = ({ url = "https://calendly.com/greenraven1000/grilled-che
         data-url={`${url}?hide_event_type_details=1&hide_gdpr_banner=1`}
         style={{
           minWidth: '320px',
-          height: '900px',
+          height: '700px',
           ...style
         }}
       />
       {!scriptLoaded && (
-        <div className="flex items-center justify-center" style={{ height: '900px' }}>
+        <div className="flex items-center justify-center" style={{ height: '700px' }}>
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500"></div>
         </div>
       )}

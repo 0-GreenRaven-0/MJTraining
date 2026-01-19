@@ -32,6 +32,7 @@ const SurveyForm = () => {
             first_name: userData.name,
             fields: {
               token: token,
+              phone_number: userData.phone,
               source: 'free_guide_survey'
             }
           })

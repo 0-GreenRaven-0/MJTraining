@@ -17,6 +17,7 @@ export const HaventBookedForm = async (userData, setToken, navigate) => {
           first_name: userData.name,
           fields: {
             token: qualifiedToken,
+            phone_number: userData.phone,
             source: 'qualified_survey_result'
           }
         })

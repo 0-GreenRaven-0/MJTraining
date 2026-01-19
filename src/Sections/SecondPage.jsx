@@ -34,16 +34,14 @@ const SecondPage = () => {
       
       <div className="relative z-10 flex flex-col justify-center gap-2 sm:gap-6 md:gap-2 ">
         <div className="w-full cloudy-bg text-white">
-                               <div className="flex items-center justify-center gap-1">
-                 <img className="w-25" src="https://ik.imagekit.io/greenraven/MJ/Droparabia.png?updatedAt=1764957826813"/>
+                               <div className="flex items-center justify-center gap-1 w-screen">
+                 <img className="w-15 md:w-20" src="https://ik.imagekit.io/greenraven/MJ/Droparabia.png?updatedAt=1764957826813"/>
                  
-                 <p className="text-5xl font-bold">
+                 <p className="text-3xl md:text-4xl font-bold">
                   DropArabia
                  </p>
             </div>
-        <p className="text-center font-semibold lg:px-40">
-         Unlike traditional dropshipping where you order huge inventories that might not sell, test the demand of different products with low budget, find your winning products and the software handles the order fullfilment and shipment!
-        </p>
+
         </div>
 
            <div className="text-center">
@@ -66,7 +64,7 @@ const SecondPage = () => {
         <div className="text-center font-semibold flex flex-col items-center gap-2">
 
           <h3>
-          Case studies of <span className="font-bold text-accent1">250</span>+ member using the software from our
+          Case studies of <span className="font-bold text-accent1">250</span>+ user using the software from our
           </h3>
                                          <div className="flex items-center justify-center gap-1">
                  <img className="w-20" src="https://ik.imagekit.io/greenraven/MJ/dropvault.png?updatedAt=1761577922501"/>

@@ -15,7 +15,7 @@ export const AuthProvider = ({ children }) => {
   const [userData, setUserData] = useState(() => {
     // Initialize from sessionStorage on first load
     const savedData = sessionStorage.getItem('userData');
-    return savedData ? JSON.parse(savedData) : { email: '', name: '' };
+    return savedData ? JSON.parse(savedData) : { email: '', name: '', phone: '' };
   });
 
   const [tokens, setTokens] = useState(() => {
@@ -36,8 +36,8 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   // Update user data
-  const updateUserData = useCallback((name, email) => {
-    const newData = { name, email };
+  const updateUserData = useCallback((name, email, phone = '') => {
+    const newData = { name, email, phone };
     setUserData(newData);
     sessionStorage.setItem('userData', JSON.stringify(newData));
   }, []);
@@ -65,7 +65,7 @@ export const AuthProvider = ({ children }) => {
 
   // Clear all data (logout/reset)
   const clearData = useCallback(() => {
-    setUserData({ email: '', name: '' });
+    setUserData({ email: '', name: '', phone: '' });
     setTokens({
       subscribed: null,
       takeSurvey: null,

@@ -17,6 +17,7 @@ export const QualifiedForm = async (userData, navigate, setToken) => {
           first_name: userData.name,
           fields: {
             token: bookedToken,
+            phone_number: userData.phone,
             source: 'booked_result'
           }
         })

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useAuth } from '../Utility/AuthContext';
+import {FaInstagram} from 'react-icons/fa';
 
 const Unqualified = () => {
   const { token } = useParams();
@@ -36,30 +37,35 @@ const Unqualified = () => {
           </p>
         </div>
 
-        {/* Main Content Section */}
-        <div className='text-center space-y-2'>
-          <h3 className="font-bold text-blue-600 text-2xl">But Worry Not!</h3>
-          <p className='text-gray-700 text-lg'>
-            We sent you this <span className='text-blue-600 font-bold'>FREE</span> Guide to your email!
-          </p>
-        </div>
 
         {/* Image and Description Section */}
         <div className='flex flex-col md:flex-row items-center justify-center gap-6 pt-4'>
           <img 
             src='https://ik.imagekit.io/greenraven/MJ/1761674331.png?updatedAt=1761674791148' 
-            className='free-guide-img w-48' 
+            className='free-guide-img w-50 md:w-70' 
             alt="Free Guide"
           />
           
-          <div className='flex flex-col gap-3 max-w-lg'>
-            <p className='text-center md:text-left text-gray-700 leading-relaxed'>
-              A comprehensive <span className='text-blue-600 font-bold'>FREE</span> guide with everything you need to know about Local Dropshipping to get you started on the right foot. Consider this your roadmap!
-            </p>
+          <div className='flex flex-col gap-2 max-w-lg'>
+            <h2 className='text-center md:text-left '>
+             But we sent you this <span className='text-accent1 font-bold'>FREE</span> comprehensive guide, with everything you need to know about local dropshipping to get you started right on the foot!
+            </h2>
 
-            <p className='text-center md:text-left text-gray-700 leading-relaxed'>
-              Take your time, master the basics, and when you're ready to scale, we'll be here waiting for you. 💪
-            </p>
+            <br/>
+            <h4>In the meantime, we highly recommend you follow us on Instagram for more engaging content, free knowledge and further announcements!</h4>
+           <button 
+             className="sub-btn shining-button gap-1 w-fit" 
+           >
+               <>
+                 <FaInstagram className="text-5xl"/>
+                 <div className="inside-sub-btn">
+                   <p className="txt-1">Follow our Instagram!</p>
+                   <h4 className="txt-2">For more content & announcements!</h4>
+                 </div>
+               </>
+           </button>
+
+     
           </div>
         </div>
       </div>
