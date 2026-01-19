@@ -325,7 +325,6 @@ backdrop-filter: blur(10px);
 -webkit-backdrop-filter: blur(10px);
 border: 1px solid rgba(59, 130, 246, 0.3);
 width: fit-content;
-border-radius: 20px;
 padding-bottom: 20px;
 padding: 0.5rem;
 animation: cloudyMove 15s ease infinite;
