@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useAuth } from '../Utility/AuthContext';
-import {FaInstagram} from 'react-icons/fa';
+import {FaInstagram, FaFileAlt} from 'react-icons/fa';
 
 const Unqualified = () => {
   const { token } = useParams();
@@ -48,13 +48,29 @@ const Unqualified = () => {
           
           <div className='flex flex-col gap-2 max-w-lg'>
             <h2 className='text-center md:text-left '>
-             But we sent you this <span className='text-accent1 font-bold'>FREE</span> comprehensive guide, with everything you need to know about local dropshipping to get you started right on the foot!
+             But here's a <span className='text-accent1 font-bold'>FREE</span> comprehensive guide with everything you need to know about local dropshipping to get you started on the right foot!
             </h2>
+
+            <button 
+              id="check-guide-btn"
+              className="sub-btn shining-button gap-1 w-fit mt-4" 
+              onClick={() => window.open('https://drive.google.com/file/d/1x_8fS2uGkQ_gUJlWQXInbVxuXqLZp-Lt/view', '_blank')}
+            >
+              <>
+                <FaFileAlt className="text-5xl"/>
+                <div className="inside-sub-btn">
+                  <p className="txt-1">Check Out the Free Guide</p>
+                  <h4 className="txt-2">Get started with local dropshipping!</h4>
+                </div>
+              </>
+            </button>
 
             <br/>
             <h4>In the meantime, we highly recommend you follow us on Instagram for more engaging content, free knowledge and further announcements!</h4>
            <button 
+             id="instagram-follow-btn"
              className="sub-btn shining-button gap-1 w-fit" 
+             onClick={() => window.open('https://www.instagram.com/mjbusinessofficial?igsh=ZG44cXRja2l4dGdk', '_blank')}
            >
                <>
                  <FaInstagram className="text-5xl"/>

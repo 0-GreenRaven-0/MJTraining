@@ -79,9 +79,10 @@ const FirstPage = () => {
         
         <PanoramaCarousel />
            <br/>
+           <br/>
 
         <div 
-          className={`flex flex-col items-center lg:flex-row gap-10 transition-all duration-1000 `}
+          className={`flex flex-col items-center lg:flex-row gap-10 transition-all duration-1000`}
         >
    
 <ul className="space-y-3 font-semibold text-lg sm:text-2xl md:text-xl">

@@ -124,7 +124,7 @@ const images = [
         {images.map((src, index) => (
           <div key={index} className="slide absolute  " style={{
             width: `calc(max(${size}) * 0.6)`,
-            height: `max(${size + 5})`,
+            height: `max(${size})`,
          
           }}>
             <img
