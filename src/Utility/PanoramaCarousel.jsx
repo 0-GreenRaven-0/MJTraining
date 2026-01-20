@@ -128,7 +128,7 @@ const images = [
          
           }}>
             <img
-              data-track="3d-carousel-img"
+              id="3d-carousel-img"
               src={src}
               alt=""
               className="block w-full h-full object-cover"
