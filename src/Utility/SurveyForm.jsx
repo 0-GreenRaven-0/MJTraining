@@ -42,6 +42,14 @@ const SurveyForm = () => {
       const data = await response.json();
 
       if (data.subscription) {
+
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'user_surveynotfinished',
+        user_name: userData.name,
+        user_email: userData.email,
+        user_phone: userData.phone,
+      });
         // Navigate to survey page with the token
         navigate(`/book-your-call/${token}`);
       } else {

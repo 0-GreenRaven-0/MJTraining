@@ -139,8 +139,6 @@ const SurveyPage = () => {
       window.dataLayer.push({
         event: 'survey_completed',
         survey_qualified: isQualified,
-        user_experience: formData.experience,
-        user_budget: formData.budget
       });
 
         if (isQualified) {

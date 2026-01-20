@@ -27,6 +27,13 @@ export const UnqualifiedForm = async (userData, setToken, navigate) => {
     const data = await response.json();
 
     if (data.subscription) {
+         window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'user_unqualified',
+        user_name: userData.name,
+        user_email: userData.email,
+        user_phone: userData.phone,
+      });
       // Navigate to get-free-program page with the token
       navigate(`/get-free-program/${unqualifiedToken}`);
       return { success: true, token: unqualifiedToken };

@@ -27,6 +27,15 @@ export const QualifiedForm = async (userData, navigate, setToken) => {
     const data = await response.json();
 
     if (data.subscription) {
+
+         window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'user_qualified',
+        user_name: userData.name,
+        user_email: userData.email,
+        user_phone: userData.phone,
+      });
+
       navigate(`/thank-you/${bookedToken}`);
       return { success: true, token: bookedToken };
     } else {

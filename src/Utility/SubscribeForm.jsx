@@ -41,8 +41,15 @@ const SubscribeForm = () => {
   const formData = new FormData(e.target)
   const name = formData.get("name")
   const email = formData.get("email")
-  // Remove space before validation/submission
   const phone = phoneValue.replace(/\s/g, '')
+
+   window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'user_subscribed',
+        user_name: formData.name,
+        user_email: formData.email,
+        user_phone: formData.phone,
+      });
   
   if (!name || !email || !phone) {
     setError("Please fill in all fields")

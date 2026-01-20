@@ -19,7 +19,10 @@ const CalendlyWidget = ({
 
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({
-          event: 'call_booked'
+          event: 'call_booked',
+            user_name: userData.name,
+            user_email: userData.email,
+            user_phone: userData.phone,
         });
         
         try {

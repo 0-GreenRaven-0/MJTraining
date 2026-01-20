@@ -27,6 +27,13 @@ export const HaventBookedForm = async (userData, setToken, navigate) => {
     const data = await response.json();
 
     if (data.subscription) {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+        event: 'user_didnotbookcall',
+        user_name: userData.name,
+        user_email: userData.email,
+        user_phone: userData.phone,
+      });
       // Navigate to choose-schedule page with the token
       navigate(`/choose-schedule/${qualifiedToken}`);
       return { success: true, token: qualifiedToken };
