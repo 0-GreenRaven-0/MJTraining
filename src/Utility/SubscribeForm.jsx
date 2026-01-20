@@ -46,9 +46,9 @@ const SubscribeForm = () => {
    window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({
         event: 'user_subscribed',
-        user_name: formData.name,
-        user_email: formData.email,
-        user_phone: formData.phone,
+        user_name: name,
+        user_email: email,
+        user_phone: phone,
       });
   
   if (!name || !email || !phone) {
