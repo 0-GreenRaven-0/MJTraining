@@ -12,16 +12,27 @@ const PanoramaCarousel = () => {
 
   let size = isMd? '30vw, 30vh' : isSm ? '45vw, 45vh' : '37vw, 37vh';
 
-  const images = [
-    'https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(1).png',
-    'https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(3).png',
-    'https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(2).png',
-    'https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(4).png',
-    'https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201.png',
-    'https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(5).png',
-    'https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(6).png',
-    'https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(7).png',
-  ];
+const images = [
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo.png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(1).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(2).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(3).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(4).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(5).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(6).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(7).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(8).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(9).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(10).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(11).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(12).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(13).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(14).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(15).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(16).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(17).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(18).png',
+]
 
   useEffect(() => {
     const loadVevet = async () => {
@@ -117,6 +128,7 @@ const PanoramaCarousel = () => {
          
           }}>
             <img
+              data-track="3d-carousel-img"
               src={src}
               alt=""
               className="block w-full h-full object-cover"

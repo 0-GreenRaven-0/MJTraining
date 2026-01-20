@@ -13,6 +13,12 @@ const CalendlyWidget = ({ url = "https://calendly.com/d/cx6h-n22-cr7/45-min-drop
     const handleCalendlyEvent = async (e) => {
       if (e.data.event && e.data.event === 'calendly.event_scheduled') {
         console.log('Calendly event scheduled!', e.data.payload);
+
+    // Push event to dataLayer for GTM
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'call_booked'
+        });
         
         try {
           await QualifiedForm(userData, navigate, setToken);

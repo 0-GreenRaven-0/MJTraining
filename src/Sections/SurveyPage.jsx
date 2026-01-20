@@ -134,6 +134,15 @@ const SurveyPage = () => {
         console.log('Survey completed:', formData);
         const isQualified = determineQualification(formData);
 
+        // Push event to dataLayer for GTM
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'survey_completed',
+        survey_qualified: isQualified,
+        user_experience: formData.experience,
+        user_budget: formData.budget
+      });
+
         if (isQualified) {
           await HaventBookedForm(userData, setToken, navigate);
         } else {

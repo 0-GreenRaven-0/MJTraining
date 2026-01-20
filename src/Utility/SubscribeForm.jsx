@@ -155,6 +155,7 @@ const SubscribeForm = () => {
         </div>
 
         <button 
+          data-track="subscribe-btn"
           className="sub-btn shining-button" 
           type="submit"
           disabled={isSubmitting}

@@ -6,14 +6,25 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 
 const images = [
-    'https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(1).png',
-    'https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(3).png',
-    'https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(2).png',
-    'https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(4).png',
-    'https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201.png',
-    'https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(5).png',
-    'https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(6).png',
-    'https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(7).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo.png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(1).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(2).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(3).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(4).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(5).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(6).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(7).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(8).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(9).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(10).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(11).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(12).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(13).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(14).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(15).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(16).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(17).png',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(18).png',
 ]
 
 const Carousel = ({ className = '' }) => {
@@ -111,11 +122,11 @@ const Carousel = ({ className = '' }) => {
           </Swiper>
 
           {/* Navigation Buttons */}
-          <div className="swiper-button-prev-custom absolute left-4 top-1/2 -translate-y-1/2 z-10 cursor-pointer bg-secondary rounded-full flex items-center justify-center text-black hover:text-accent1 transition-colors">
+          <div data-track="carousel-btn" className="swiper-button-prev-custom absolute left-4 top-1/2 -translate-y-1/2 z-10 cursor-pointer bg-secondary rounded-full flex items-center justify-center text-black hover:text-accent1 transition-colors">
             <FaArrowLeft className='md:text-6xl'/>
           </div>
 
-          <div className="swiper-button-next-custom absolute right-4 top-1/2 -translate-y-1/2 z-10 cursor-pointer bg-secondary rounded-full flex items-center justify-center text-black hover:text-accent1 transition-colors">
+          <div data-track="carousel-btn" className="swiper-button-next-custom absolute right-4 top-1/2 -translate-y-1/2 z-10 cursor-pointer bg-secondary rounded-full flex items-center justify-center text-black hover:text-accent1 transition-colors">
             <FaArrowRight className='md:text-6xl'/>
           </div>
         </div>

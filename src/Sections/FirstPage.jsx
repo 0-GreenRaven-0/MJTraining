@@ -95,19 +95,19 @@ const FirstPage = () => {
             </h2>
   <li className="flex items-center gap-3">
     <FaCheckCircle className="text-blue-500 flex-shrink-0 bullet-icon" />
-    <span>Test Products with low budget</span>
+    <span>Test real winning products starting with as little as 10$/day</span>
   </li>
   <li className="flex items-center gap-3">
     <FaCheckCircle className="text-blue-500 flex-shrink-0 bullet-icon" />
-    <span>Automate shipment & order fulfillment</span>
+    <span>We handle shipping, COD & fulfillment you focus only on sales</span>
   </li>
   <li className="flex items-center gap-3">
     <FaCheckCircle className="text-blue-500 flex-shrink-0 bullet-icon" />
-    <span>Build your own Brand through private Labeling</span>
+    <span>Turn winning products into your own branded business (not just dropshipping)</span>
   </li>
   <li className="flex items-center gap-3">
     <FaCheckCircle className="text-blue-500 flex-shrink-0 bullet-icon" />
-    <span>Launch your own store within 2 weeks</span>
+    <span>Launch a fully working store in 10 to 14 days even if you’re a beginner</span>
   </li>
 </ul>
           <SubscribeForm />
