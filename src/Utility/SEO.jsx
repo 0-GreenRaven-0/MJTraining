@@ -1,9 +1,9 @@
 import { Title, Meta, Link } from 'react-head';
 
 export default function SEO({ 
-  title = "Join DropArabia the first dropshipping platform in Lebanon! | Test Products Before You Buy Inventory",
-  description = "Launch your dropshipping business in Lebanon with DropArabia. Test winning products with low risk, no inventory needed. We handle shipping, COD & fulfillment. Start your store in 10-14 days.",
-  keywords = "dropshipping Lebanon, dropshipping platform, test products before buying, low risk dropshipping, COD fulfillment Lebanon, dropshipping tools, start dropshipping business, product testing platform, ecommerce Lebanon, dropshipping software"
+  title = "Build your profitable Dropshipping Store with Droparabia!",
+  description = "Join the 1st dropshipping platform in Lebanon which helped +250 lebanese user build their dropshipping store with tiny budgets & less risk!",
+  keywords = "dropshipping Lebanon, dropshipping platform, test products before buying, low risk dropshipping, COD fulfillment Lebanon, dropshipping tools, start dropshipping business, product testing platform, ecommerce Lebanon, dropshipping software, dropshipping community, Is dropshipping possible in lebanon, online income in lebanon"
 }) {
   const url = "https://join.droparabia.com";
 
@@ -32,9 +32,12 @@ export default function SEO({
     "featureList": [
       "Product demand testing with low daily budget",
       "COD and fulfillment management",
+      "Real way to make online income in lebanon",
       "Brand building from winning products",
       "Fast store launch in 10-14 days",
-      "Shipping and logistics support"
+      "Shipping and logistics support",
+      "Community of +250 user built their profitable dropshipping store",
+      "Real time daily support & feedbacks from experienced exports"
     ]
   };
 
