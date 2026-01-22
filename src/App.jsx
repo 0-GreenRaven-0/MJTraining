@@ -8,6 +8,7 @@ import NotFound from "./Utility/NotFound";
 import Thankyou from "./Sections/Thankyou";
 import { AuthProvider } from "./Utility/AuthContext";
 import { useEffect } from "react";
+import SEO from './Utility/SEO';
 
 const App = () => {
 
@@ -19,6 +20,7 @@ const App = () => {
 
   return (
     <AuthProvider>
+      <SEO/>
       <Routes>
         <Route path="/" element={<FirstPage />} />
         <Route path="/free-guide-unlocked/:token" element={<SecondPage />} />
