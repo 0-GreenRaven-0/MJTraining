@@ -28,7 +28,7 @@ const SecondPage = () => {
   }
   
   return (
-    <div className='relative flex flex-col justify-center gap-2 md:gap-6 overflow-hidden pt-0'>
+    <main className='relative flex flex-col justify-center gap-2 md:gap-6 overflow-hidden pt-0'>
       <div className='bg-patterns w-full h-[50%] hero-asset absolute bg-[6%_auto] md:bg-[2%_auto] inset-0 -z-10 opacity-30'/>
       <div className='bg-patterns w-full h-[50%] hero-asset2 absolute bg-[6%_auto] md:bg-[2%_auto] bottom-0 right-0 -z-10 opacity-30'/>
       
@@ -67,7 +67,7 @@ const SecondPage = () => {
           Case studies of <span className="font-bold text-accent1">250</span>+ user using the software from our
           </h3>
                                          <div className="flex items-center justify-center gap-1">
-                 <img className="w-20" src="https://ik.imagekit.io/greenraven/MJ/dropvault.png?updatedAt=1761577922501"/>
+                 <img className="w-20" loading="lazy" alt="DropVault Logo" src="https://ik.imagekit.io/greenraven/MJ/dropvault.png?updatedAt=1761577922501"/>
                  
                  <p className="text-2xl md:text-4xl font-bold">
                   DropVault Community
@@ -79,7 +79,7 @@ const SecondPage = () => {
           <Carousel/>
         </div>
       </div>
-    </div>
+    </main>
   )
 }
 

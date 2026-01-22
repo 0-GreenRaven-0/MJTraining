@@ -32,7 +32,7 @@ const FirstPage = () => {
   }, [])
 
   return (
-    <div className="relative bg-first overflow-x-hidden overflow-y-auto scrollbar-hide p-2 pt-0">
+    <main className="relative bg-first overflow-x-hidden overflow-y-auto scrollbar-hide p-2 pt-0">
       {/* Intro Screen */}
       {showIntro && (
         <div 
@@ -56,7 +56,7 @@ const FirstPage = () => {
           <div className="flex w-screen flex-col gap-2 justify-center items-center text-white">
             
             <div className="flex items-center justify-center gap-1 w-full">
-                 <img className="w-25" src="https://ik.imagekit.io/greenraven/MJ/Droparabia.png?updatedAt=1764957826813"/>
+                 <img className="w-25" loading="lazy" alt="DropArabia Logo" src="https://ik.imagekit.io/greenraven/MJ/Droparabia.png?updatedAt=1764957826813"/>
                  <p className="text-4xl font-bold">
                   DropArabia
                  </p>
@@ -88,7 +88,7 @@ const FirstPage = () => {
 <ul className="space-y-3 font-semibold text-lg sm:text-2xl md:text-xl">
   <h2 className="flex items-center font-normal">With   
       <div className="px-2 flex items-center gap-1">
-        <img className="w-12" src="https://ik.imagekit.io/greenraven/MJ/Droparabia.png?updatedAt=1764957826813"/>
+        <img className="w-12" loading="lazy" alt="DropArabia Logo" src="https://ik.imagekit.io/greenraven/MJ/Droparabia.png?updatedAt=1764957826813"/>
                  <p className="text-2xl font-bold">
                   DropArabia:
                  </p>
@@ -135,7 +135,7 @@ const FirstPage = () => {
           animation: fadeInText 2s ease-in-out;
         }
       `}</style>
-    </div>
+    </main>
   )
 }
 

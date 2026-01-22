@@ -9,7 +9,7 @@ const Thankyou = () => {
 
   if (!isValidToken) {
     return (
-      <div className="section relative flex flex-col justify-center items-center gap-4 py-20">
+      <main className="section relative flex flex-col justify-center items-center gap-4 py-20">
         <div className="bg-white rounded-2xl shadow-xl border-2 border-gray-200 p-8 max-w-md text-center">
           <h1 className="text-3xl font-bold text-gray-900 mb-4">You Haven't Booked a call yet!</h1>
           <h2 className="text-xl text-gray-700 mb-6">
@@ -22,12 +22,12 @@ const Thankyou = () => {
             Go Back
           </button>
         </div>
-      </div>
+      </main>
     );
   }
 
   return (
-    <div className="section relative flex flex-col justify-center items-center gap-4 py-20">
+    <main className="section relative flex flex-col justify-center items-center gap-4 py-20">
       <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl shadow-2xl border-2 border-blue-200 p-12 max-w-2xl text-center">
         <div className="mb-6">
           <svg className="w-20 h-20 mx-auto text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -39,7 +39,7 @@ const Thankyou = () => {
           Check your email for the zoom call link!
         </h2>
       </div>
-    </div>
+    </main>
   );
 }
 

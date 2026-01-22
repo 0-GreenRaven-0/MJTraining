@@ -128,9 +128,10 @@ const images = [
          
           }}>
             <img
+              loading='lazy'
               id="3d-carousel-img"
               src={src}
-              alt=""
+              alt="Testimonial"
               className="block w-full h-full object-cover"
               draggable="false"
             />

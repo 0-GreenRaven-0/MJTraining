@@ -164,7 +164,7 @@ const SurveyPage = () => {
   };
 
   return (
-    <div>
+    <main>
       <style>{`
         .page-container {
           position: relative;
@@ -327,7 +327,7 @@ const SurveyPage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

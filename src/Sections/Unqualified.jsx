@@ -11,7 +11,7 @@ const Unqualified = () => {
   
   if (!isValidToken) {
     return (
-      <div className="section relative flex flex-col justify-center items-center gap-4 min-h-[60vh] py-20">
+      <main className="section relative flex flex-col justify-center items-center gap-4 min-h-[60vh] py-20">
         <h1 className="text-center text-3xl font-bold text-gray-900">No cheating allowed! 😏</h1>
         <h2 className="text-center text-xl text-gray-700">
           Please go back and finish the survey first
@@ -22,12 +22,12 @@ const Unqualified = () => {
         >
           Go Back
         </button>
-      </div>
+      </main>
     );
   }
   
   return (
-    <div className='flex items-center justify-center p-4 min-h-screen py-12'>
+    <main className='flex items-center justify-center p-4 min-h-screen py-12'>
       <div className='w-full max-w-4xl space-y-6'>
         {/* Header Section */}
         <div className='text-center space-y-2'>
@@ -85,7 +85,7 @@ const Unqualified = () => {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

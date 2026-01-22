@@ -87,7 +87,7 @@ const Qualified = () => {
   }, []);
 
   return (
-    <div>
+    <main>
       <div className='flex items-center justify-center p-4 min-h-screen' ref={containerRef}>
         <div className='w-full max-w-4xl space-y-6'>
           <div className='text-center space-y-4'>
@@ -112,7 +112,7 @@ const Qualified = () => {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 
