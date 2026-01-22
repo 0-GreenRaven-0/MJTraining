@@ -12,27 +12,27 @@ const PanoramaCarousel = () => {
 
   let size = isMd? '30vw, 30vh' : isSm ? '45vw, 45vh' : '37vw, 37vh';
 
-const images = [
-    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo.png?tr=q-80,f-webp',
-    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(1).png?tr=q-80,f-webp',
-    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(2).png?tr=q-80,f-webp',
-    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(3).png?tr=q-80,f-webp',
-    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(4).png?tr=q-80,f-webp',
-    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(5).png?tr=q-80,f-webp',
-    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(6).png?tr=q-80,f-webp',
-    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(7).png?tr=q-80,f-webp',
-    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(8).png?tr=q-80,f-webp',
-    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(9).png?tr=q-80,f-webp',
-    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(10).png?tr=q-80,f-webp',
-    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(11).png?tr=q-80,f-webp',
-    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(12).png?tr=q-80,f-webp',
-    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(13).png?tr=q-80,f-webp',
-    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(14).png?tr=q-80,f-webp',
-    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(15).png?tr=q-80,f-webp',
-    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(16).png?tr=q-80,f-webp',
-    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(17).png?tr=q-80,f-webp',
-    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(18).png?tr=q-80,f-webp',
-];
+  const images = [
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo.png?tr=w-640,q-80,f-webp',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(1).png?tr=w-640,q-80,f-webp',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(2).png?tr=w-640,q-80,f-webp',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(3).png?tr=w-640,q-80,f-webp',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(4).png?tr=w-640,q-80,f-webp',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(5).png?tr=w-640,q-80,f-webp',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(6).png?tr=w-640,q-80,f-webp',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(7).png?tr=w-640,q-80,f-webp',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(8).png?tr=w-640,q-80,f-webp',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(9).png?tr=w-640,q-80,f-webp',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(10).png?tr=w-640,q-80,f-webp',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(11).png?tr=w-640,q-80,f-webp',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(12).png?tr=w-640,q-80,f-webp',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(13).png?tr=w-640,q-80,f-webp',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(14).png?tr=w-640,q-80,f-webp',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(15).png?tr=w-640,q-80,f-webp',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(16).png?tr=w-640,q-80,f-webp',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(17).png?tr=w-640,q-80,f-webp',
+    'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo%20(18).png?tr=w-640,q-80,f-webp',
+  ];
 
   useEffect(() => {
     const loadVevet = async () => {
