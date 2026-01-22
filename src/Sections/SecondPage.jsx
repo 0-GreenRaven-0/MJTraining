@@ -35,7 +35,7 @@ const SecondPage = () => {
       <div className="relative z-10 flex flex-col justify-center gap-2 sm:gap-6 md:gap-2 ">
         <div className="w-full cloudy-bg text-white">
                                <div className="flex items-center justify-center gap-1 w-screen">
-                 <img className="w-15 md:w-20" src="https://ik.imagekit.io/greenraven/MJ/Droparabia.png?updatedAt=1764957826813"/>
+                 <img className="w-15 md:w-20" loading="lazy" alt="DropArabia Logo" src="https://ik.imagekit.io/greenraven/MJ/Droparabia.png?updatedAt=1764957826813?tr=w-175,q-80,f-webp"/>
                  
                  <p className="text-3xl md:text-4xl font-bold">
                   DropArabia
