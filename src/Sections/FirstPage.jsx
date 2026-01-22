@@ -86,7 +86,8 @@ const FirstPage = () => {
         >
    
 <ul className="space-y-3 font-semibold text-lg sm:text-2xl md:text-xl">
-  <h2 className="flex items-center font-normal">With   
+  <li>
+      <h2 className="flex items-center font-normal">With   
       <div className="px-2 flex items-center gap-1">
         <img className="w-12" loading="lazy" alt="DropArabia Logo" src="https://ik.imagekit.io/greenraven/MJ/Droparabia.png?updatedAt=1764957826813"/>
                  <p className="text-2xl font-bold">
@@ -94,6 +95,8 @@ const FirstPage = () => {
                  </p>
             </div>
             </h2>
+  </li>
+
   <li className="flex items-center gap-3">
     <FaCheckCircle className="text-blue-500 flex-shrink-0 bullet-icon" />
     <span>Test real winning products starting with as little as 10$/day</span>

@@ -13,7 +13,7 @@ const Qualified = () => {
   
   if (!isValidToken) {
     return (
-      <div className="section relative flex flex-col justify-center items-center gap-4 min-h-[60vh]">
+      <main className="section relative flex flex-col justify-center items-center gap-4 min-h-[60vh]">
         <h1 className="text-center text-3xl font-bold text-gray-900">No cheating allowed! 😏</h1>
         <h2 className="text-center text-xl text-gray-700">
           Please go back and finish the survey first
@@ -24,7 +24,7 @@ const Qualified = () => {
         >
           Go Back
         </button>
-      </div>
+      </main>
     );
   }
   

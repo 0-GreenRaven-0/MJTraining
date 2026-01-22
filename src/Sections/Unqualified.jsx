@@ -41,6 +41,7 @@ const Unqualified = () => {
         {/* Image and Description Section */}
         <div className='flex flex-col md:flex-row items-center justify-center gap-6 pt-4'>
           <img 
+            loading='lazy'
             src='https://ik.imagekit.io/greenraven/MJ/1761674331.png?updatedAt=1761674791148' 
             className='free-guide-img w-50 md:w-70' 
             alt="Free Guide"
