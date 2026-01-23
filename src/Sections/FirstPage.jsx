@@ -32,7 +32,7 @@ const FirstPage = () => {
   }, [])
 
   return (
-    <main className="relative bg-first overflow-x-hidden overflow-y-auto scrollbar-hide p-2 pt-0">
+    <main className="relative bg-first overflow-x-hidden scrollbar-hide p-2 pt-0">
       {/* Intro Screen */}
       {showIntro && (
         <div 

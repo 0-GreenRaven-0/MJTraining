@@ -112,7 +112,7 @@ const PanoramaCarousel = () => {
   }, [isMd]);
 
   return (
-    <div className="w-screen relative scrollbar-hide" style={{ height: `max(${size})` }}>
+    <div className="w-screen relative scrollbar-hide overflow-hidden" style={{ height: `max(${size})` }}>
       <div
         ref={containerRef}
         className="carousel absolute inset-0 transition-opacity duration-[250ms]"

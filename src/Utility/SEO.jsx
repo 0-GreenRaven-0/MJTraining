@@ -42,7 +42,7 @@ export default function SEO({
   };
 
   return (
-    <main className='overflow-hidden!'>
+    <main className='overflow-y-hidden!'>
       <Title>{title}</Title>
       <Meta name="title" content={title} />
       <Meta name="description" content={description} />
