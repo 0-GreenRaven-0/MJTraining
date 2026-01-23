@@ -42,7 +42,7 @@ export default function SEO({
   };
 
   return (
-    <>
+    <main className='overflow-hidden!'>
       <Title>{title}</Title>
       <Meta name="title" content={title} />
       <Meta name="description" content={description} />
@@ -68,6 +68,6 @@ export default function SEO({
       <script type="application/ld+json">
         {JSON.stringify(structuredData)}
       </script>
-    </>
+    </main>
   );
 }
