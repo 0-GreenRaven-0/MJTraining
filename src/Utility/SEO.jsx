@@ -2,7 +2,7 @@ import { Title, Meta, Link } from 'react-head';
 
 export default function SEO({ 
   title = "Build your profitable Dropshipping Store with Droparabia!",
-  description = "Join the 1st dropshipping platform in Lebanon which helped +250 lebanese user build their dropshipping store with tiny budgets & less risk!",
+  description = "Join the 1st dropshipping platform in Lebanon which helped +250 lebanese user build their dropshipping store with tiny budgets within 2 weeks!",
   keywords = "dropshipping Lebanon, dropshipping platform, test products before buying, low risk dropshipping, COD fulfillment Lebanon, dropshipping tools, start dropshipping business, product testing platform, ecommerce Lebanon, dropshipping software, dropshipping community, Is dropshipping possible in lebanon, online income in lebanon"
 }) {
   const url = "https://join.droparabia.com";
@@ -10,7 +10,7 @@ export default function SEO({
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "DropArabia",
+    "name": "Join DropArabia",
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "Web",
     "description": description,
