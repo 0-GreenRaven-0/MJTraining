@@ -13,6 +13,11 @@ body{
   font-family: 'Inter', sans-serif;
 }
 
+/* In your global CSS file */
+:root {
+  color-scheme: light only;
+}
+
 @theme{
   --color-background: #000025;
   --color-accent1: #0043fc;

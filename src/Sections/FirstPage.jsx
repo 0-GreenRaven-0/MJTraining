@@ -12,17 +12,17 @@ const FirstPage = () => {
     // Start fade out animation
     const fadeTimer = setTimeout(() => {
       setIntroFade(true)
-    }, 2000)
+    }, 3000)
 
     // Remove intro screen after fade completes
     const introTimer = setTimeout(() => {
       setShowIntro(false)
-    }, 3000)
+    }, 4000)
 
     // Show main content after intro fades
     const contentTimer = setTimeout(() => {
       setShowContent(true)
-    }, 2300)
+    }, 3300)
 
     return () => {
       clearTimeout(fadeTimer)
@@ -36,15 +36,20 @@ const FirstPage = () => {
       {/* Intro Screen */}
       {showIntro && (
         <div 
-          className={`fixed inset-0 bg-blue-900 flex items-center justify-center z-50 transition-opacity duration-700 ${
+          className={`fixed inset-0 bg-[#dedede] flex flex-col gap-5 items-center justify-center z-50 transition-opacity duration-700 ${
             introFade ? 'opacity-0' : 'opacity-100'
           }`}
         >
           <h1 
-            className="text-white font-bold text-center px-4 animate-fade-in-text max-w-full"
+            className="text-accent1 font-bold text-center px-4 max-w-full animate-slide-up-1"
           >
-           Stop guessing what sells, start testing with low risk.
+           Become our next Case study
           </h1>
+          <div className="flex gap-2 md:gap-10 justify-center items-center animate-slide-up-2">
+            <img className="w-43 sm:w-75 md:w-60" src="https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(2).png?updatedAt=1768744201260"/>
+            <img className="w-43 sm:w-75 md:w-60" src="https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201.png?updatedAt=1768744201034"/>
+          </div>
+          <h3 className=" font-bold text-center px-4 max-w-full animate-slide-up-3">Join & access the new dropshipping platform in Lebanon</h3>
         </div>
       )}
 
@@ -74,7 +79,7 @@ const FirstPage = () => {
         </div>
  <br/>
          <h3 className="text-center font-bold">
-            A Proven System that helped 250+ user score their first sale within 2 weeks!
+            The platform helped over 300 lebanese build their dropshipping business.
           </h3>
         
         <PanoramaCarousel />
@@ -103,15 +108,24 @@ const FirstPage = () => {
   </li>
   <li className="flex items-center gap-3">
     <FaCheckCircle className="text-blue-500 flex-shrink-0 bullet-icon" />
-    <span>We handle shipping, COD & fulfillment you focus only on sales</span>
+    <span>Automated System for order fulfillment, shipping & COD </span>
+    {/* We handle shipping, COD & fulfillment you focus only on sales */}
   </li>
   <li className="flex items-center gap-3">
     <FaCheckCircle className="text-blue-500 flex-shrink-0 bullet-icon" />
-    <span>Turn winning products into your own branded business (not just dropshipping)</span>
+    <span>Build your personal brand as your business grows</span>
+    {/* Turn winning products into your own branded business (not just dropshipping) */}
   </li>
   <li className="flex items-center gap-3">
     <FaCheckCircle className="text-blue-500 flex-shrink-0 bullet-icon" />
-    <span>Launch a fully working store in 10 to 14 days even if you’re a beginner</span>
+    <span>Launch your complete dropshipping store within 10 to 14 days </span>
+    {/*Launch a fully working store in 10 to 14 days even if you're a beginner */}
+  </li>
+  
+    <li className="flex items-center gap-3">
+    <FaCheckCircle className="text-blue-500 flex-shrink-0 bullet-icon" />
+    <span>No Experience Needed! Pre recorder tutorials + Advisory support</span>
+
   </li>
 </ul>
           <SubscribeForm />
@@ -119,23 +133,27 @@ const FirstPage = () => {
       </div>
 
       <style>{`
-        @keyframes fadeInText {
+        @keyframes slideUpSequential {
           0% {
             opacity: 0;
-            transform: scale(0.9);
-          }
-          50% {
-            opacity: 1;
-            transform: scale(1);
+            transform: translateY(40px);
           }
           100% {
             opacity: 1;
-            transform: scale(1);
+            transform: translateY(0);
           }
         }
 
-        .animate-fade-in-text {
-          animation: fadeInText 2s ease-in-out;
+        .animate-slide-up-1 {
+          animation: slideUpSequential 0.6s ease-out 0.2s both;
+        }
+
+        .animate-slide-up-2 {
+          animation: slideUpSequential 0.6s ease-out 0.5s both;
+        }
+
+        .animate-slide-up-3 {
+          animation: slideUpSequential 0.6s ease-out 0.8s both;
         }
       `}</style>
     </main>
