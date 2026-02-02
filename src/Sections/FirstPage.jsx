@@ -46,8 +46,8 @@ const FirstPage = () => {
            The System that made Dropshipping possible and easier in Lebanon!
           </h1>
           <div className="flex gap-2 md:gap-10 justify-center items-center animate-slide-up-2">
-            <img className="w-43 sm:w-75 md:w-60" src="https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(2).png?updatedAt=1768744201260"/>
-            <img className="w-43 sm:w-75 md:w-60" src="https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201.png?updatedAt=1768744201034"/>
+            <img className="w-43 sm:w-75 md:w-60" loading="eager" src="https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(2).png?updatedAt=1768744201260"/>
+            <img className="w-43 sm:w-75 md:w-60" loading="eager"  src="https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201.png?updatedAt=1768744201034"/>
           </div>
           <h3 className=" font-bold text-center px-4 max-w-full animate-slide-up-3">
             No Inventory or huge budget needed!
