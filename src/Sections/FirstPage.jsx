@@ -43,13 +43,15 @@ const FirstPage = () => {
           <h1 
             className="text-accent1 font-bold text-center px-4 max-w-full animate-slide-up-1"
           >
-           Become our next Case study
+           The System that made Dropshipping possible and easier in Lebanon!
           </h1>
           <div className="flex gap-2 md:gap-10 justify-center items-center animate-slide-up-2">
             <img className="w-43 sm:w-75 md:w-60" src="https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(2).png?updatedAt=1768744201260"/>
             <img className="w-43 sm:w-75 md:w-60" src="https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201.png?updatedAt=1768744201034"/>
           </div>
-          <h3 className=" font-bold text-center px-4 max-w-full animate-slide-up-3">Join & access the new dropshipping platform in Lebanon</h3>
+          <h3 className=" font-bold text-center px-4 max-w-full animate-slide-up-3">
+            No Inventory or huge budget needed!
+          </h3>
         </div>
       )}
 
@@ -79,7 +81,7 @@ const FirstPage = () => {
         </div>
  <br/>
          <h3 className="text-center font-bold">
-            The platform helped over 300 lebanese build their dropshipping business.
+            Over <span className="text-accent1 text-3xl!">300</span> Lebanese built their dropshipping business with Droparabia.
           </h3>
         
         <PanoramaCarousel />
@@ -130,6 +132,7 @@ const FirstPage = () => {
 </ul>
           <SubscribeForm />
         </div>
+        <br/>
       </div>
 
       <style>{`
