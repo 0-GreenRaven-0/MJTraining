@@ -48,7 +48,7 @@ const FirstPage = () => {
                  </p>
             </div>
           <h2 
-            className="text-accent1 font-bold text-center px-4 max-w-full animate-slide-up-2"
+            className="text-accent1 text-sm lg:text-2xl font-bold text-center px-4 max-w-full animate-slide-up-2"
           >
            This is your shot for building a real income stream in Lebanon through Dropshipping!
           </h2>
@@ -68,8 +68,8 @@ const FirstPage = () => {
           <div className="flex w-screen flex-col gap-2 justify-center items-center text-white">
             
             <div className="flex items-center justify-center gap-1 w-full">
-                 <img className="w-25" loading="lazy" alt="DropArabia Logo" src="https://ik.imagekit.io/greenraven/MJ/Droparabia.png?updatedAt=1764957826813?tr=w-175,q-80,f-webp"/>
-                 <p className="text-5xl font-extralight droparabia">
+                 <img className="w-20" loading="lazy" alt="DropArabia Logo" src="https://ik.imagekit.io/greenraven/MJ/Droparabia.png?updatedAt=1764957826813?tr=w-175,q-80,f-webp"/>
+                 <p className="text-4xl font-extralight droparabia">
                   DropArabia
                  </p>
             </div>
