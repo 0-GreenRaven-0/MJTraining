@@ -40,18 +40,23 @@ const FirstPage = () => {
             introFade ? 'opacity-0' : 'opacity-100'
           }`}
         >
-          <h1 
-            className="text-accent1 font-bold text-center px-4 max-w-full animate-slide-up-1"
+                      
+            <div className="flex items-center justify-center gap-1 w-full animate-slide-up-1">
+                 <img className="w-25" loading="lazy" alt="DropArabia Logo" src="https://ik.imagekit.io/greenraven/MJ/Droparabia.png?updatedAt=1764957826813?tr=w-175,q-80,f-webp"/>
+                 <p className="text-4xl font-bold">
+                  DropArabia
+                 </p>
+            </div>
+          <h2 
+            className="text-accent1 font-bold text-center px-4 max-w-full animate-slide-up-2"
           >
-           The System that made Dropshipping possible and easier in Lebanon!
-          </h1>
-          <div className="flex gap-2 md:gap-10 justify-center items-center animate-slide-up-2">
+           This is your shot for building a real income stream in Lebanon through Dropshipping!
+          </h2>
+          <div className="flex gap-2 md:gap-10 justify-center items-center animate-slide-up-3">
             <img className="w-43 sm:w-75 md:w-60" loading="eager" src="https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(2).png?updatedAt=1768744201260"/>
             <img className="w-43 sm:w-75 md:w-60" loading="eager"  src="https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201.png?updatedAt=1768744201034"/>
           </div>
-          <h3 className=" font-bold text-center px-4 max-w-full animate-slide-up-3">
-            No Inventory or huge budget needed!
-          </h3>
+     
         </div>
       )}
 

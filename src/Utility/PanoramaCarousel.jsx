@@ -10,7 +10,7 @@ const PanoramaCarousel = () => {
   const isSm = useMediaQuery({ minWidth: 640 });
   const isMd = useMediaQuery({ minWidth: 768 });
 
-  let size = isMd? '30vw, 30vh' : isSm ? '45vw, 45vh' : '37vw, 37vh';
+  let size = isMd? '25vw, 25vh' : isSm ? '45vw, 45vh' : '37vw, 37vh';
 
   const images = [
     'https://ik.imagekit.io/greenraven/MJ/Testimonials/Testo.png?tr=w-320,q-80,f-webp',
