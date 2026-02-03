@@ -43,7 +43,7 @@ const FirstPage = () => {
                       
             <div className="flex items-center justify-center gap-1 w-full animate-slide-up-1">
                  <img className="w-25" loading="lazy" alt="DropArabia Logo" src="https://ik.imagekit.io/greenraven/MJ/Droparabia.png?updatedAt=1764957826813?tr=w-175,q-80,f-webp"/>
-                 <p className="text-4xl font-bold">
+                 <p className="text-4xl droparabia">
                   DropArabia
                  </p>
             </div>
@@ -69,7 +69,7 @@ const FirstPage = () => {
             
             <div className="flex items-center justify-center gap-1 w-full">
                  <img className="w-25" loading="lazy" alt="DropArabia Logo" src="https://ik.imagekit.io/greenraven/MJ/Droparabia.png?updatedAt=1764957826813?tr=w-175,q-80,f-webp"/>
-                 <p className="text-4xl font-bold">
+                 <p className="text-5xl font-extralight droparabia">
                   DropArabia
                  </p>
             </div>
@@ -102,7 +102,7 @@ const FirstPage = () => {
       <h2 className="flex items-center font-normal">With   
       <div className="px-2 flex items-center gap-1">
         <img className="w-12" loading="lazy" alt="DropArabia Logo" src="https://ik.imagekit.io/greenraven/MJ/Droparabia.png?updatedAt=1764957826813?tr=w-175,q-80,f-webp"/>
-                 <p className="text-2xl font-bold">
+                 <p className="text-2xl droparabia">
                   DropArabia:
                  </p>
             </div>

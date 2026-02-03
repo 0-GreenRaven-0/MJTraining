@@ -37,7 +37,7 @@ const SecondPage = () => {
                                <div className="flex items-center justify-center gap-1 w-screen">
                  <img className="w-15 md:w-20" loading="lazy" alt="DropArabia Logo" src="https://ik.imagekit.io/greenraven/MJ/Droparabia.png?updatedAt=1764957826813?tr=w-175,q-80,f-webp"/>
                  
-                 <p className="text-3xl md:text-4xl font-bold">
+                 <p className="text-3xl md:text-4xl droparabia">
                   DropArabia
                  </p>
             </div>
