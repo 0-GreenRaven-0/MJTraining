@@ -70,7 +70,7 @@ const SecondPage = () => {
                  <img className="w-20" loading="lazy" alt="DropVault Logo" src="https://ik.imagekit.io/greenraven/MJ/dropvault.png?updatedAt=1761577922501"/>
                  
                  <p className="text-2xl md:text-4xl font-bold">
-                  DropVault Community
+                  <span className="droparabia">DropVault</span> Community
                  </p>
   
             </div>
