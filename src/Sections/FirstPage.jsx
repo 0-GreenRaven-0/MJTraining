@@ -50,7 +50,7 @@ const FirstPage = () => {
           <h2 
             className="text-accent1 text-sm lg:text-2xl font-bold text-center px-4 max-w-full animate-slide-up-2"
           >
-           This is your shot for building a real income stream in Lebanon through Dropshipping!
+           They told you that Dropshipping doesn't work In Lebanon or any Arab Country...
           </h2>
           <div className="flex gap-2 md:gap-10 justify-center items-center animate-slide-up-3">
             <img className="w-43 sm:w-75 md:w-60" loading="eager" src="https://ik.imagekit.io/greenraven/MJ/Case%20Studies/Instagram%20story%20-%201%20(2).png?updatedAt=1768744201260"/>
@@ -85,9 +85,9 @@ const FirstPage = () => {
         
         </div>
  <br/>
-         <h3 className="text-center font-bold">
-            Over <span className="text-accent1 text-3xl!">300</span> Lebanese built their dropshipping business with Droparabia.
-          </h3>
+         <p className="text-center font-bold pb-2">
+            Droparabia helped <span className="text-accent1 text-2xl!">300+</span> Lebanese users build a real profitable dropshipping business within 10 to 14 days!
+          </p>
         
         <PanoramaCarousel />
            <br/>

@@ -113,7 +113,7 @@ const SubscribeForm = () => {
   return (
     <>
       <form className="sub-form cloudy-gradient" onSubmit={handleSubmit}>
-        <h2 className="text-center font-semibold text-white">Subscribe to watch the free tutorial!</h2>
+        <h2 className="text-center font-semibold text-white">Subscribe To Gain Access!</h2>
         
         {error && (
           <div className="error-message text-red-500 text-center mb-3">
@@ -177,8 +177,8 @@ const SubscribeForm = () => {
             <>
               <FaUnlock className="text-5xl" />
               <div className="inside-sub-btn">
-                <p className="txt-1">Unlock the tutorial!</p>
-                <h4 className="txt-2">Learn how to use DropArabia!</h4>
+                <p className="txt-1">Unlock DropArabia!</p>
+                <h4 className="txt-2">build your dropshipping store today</h4>
               </div>
             </>
           )}
