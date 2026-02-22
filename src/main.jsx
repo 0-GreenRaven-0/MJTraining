@@ -8,7 +8,7 @@ import { HeadProvider } from 'react-head';
 
 if(process.env.NODE_ENV === 'production') disableReactDevTools()
 
-createRoot(document.getElementById('root')).render(
+/* createRoot(document.getElementById('root')).render(
   <StrictMode>
     <HeadProvider>
     <BrowserRouter>
@@ -17,3 +17,4 @@ createRoot(document.getElementById('root')).render(
     </HeadProvider>
   </StrictMode>,
 )
+ */
